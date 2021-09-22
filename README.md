@@ -5,16 +5,16 @@ This repository is supplementing the paper **Genome-scale metabolic modelling of
 
 ## Data preprocessing (Shell)
 * [```make_index.sh```](/Code/Linux/make_index.sh): Downloads the Human transcriptome data and generate the kallisto transcriptome index. 
-* [```NHBE.sh```](/Code/Linux/NHBE.sh): Downloads the NHBE RNA-seq fastq files and generate the quantification with Kallisto.
+* [```NHBE.sh```](/Code/Linux/NHBE.sh): Downloads the HBE RNA-seq fastq files and generate the quantification with Kallisto.
 * [```293T.sh```](/Code/Linux/293T.sh): Downloads the 293T RNA-seq fastq files and generate the quantification with Kallisto. 
 * [```A549.sh```](/Code/Linux/A549.sh): Downloads the A549 RNA-seq fastq files and generate the quantification with Kallisto. 
-* [```Calu.sh```](/Code/Linux/Calu.sh): Downloads the Calu RNA-seq fastq files and generate the quantification with Kallisto.  
+* [```Calu.sh```](/Code/Linux/Calu.sh): Downloads the Calu-3 RNA-seq fastq files and generate the quantification with Kallisto.  
 * [```Lung.sh```](/Code/Linux/Lung.sh): Downloads the Lung RNA-seq fastq files and generate the quantification with Kallisto. 
 
 ## Model extraction (Matlab)
-* [```Main.m```](/Code/Matlab/Main.m): A script that allows the user to choose the type of cell he wants to generate and with which MEM.
-* [```Generation_iMAT_alt.m```](/Code/Matlab/Generation_iMAT_alt.m): A function that generate the healthy and infected model with iMAT algorithm.
-* [```Generation_GIMME_alt.m```](/Code/Matlab/Generation_Gimme_alt.m): A function that generate the healthy and infected model with GIMME algorithm.
+* [```Main.m```](/Code/Matlab/Main.m): A script that allows the user to choose a dataset and a MEM used in the extraction process.
+* [```Generation_iMAT_alt.m```](/Code/Matlab/Generation_iMAT_alt.m): A function that generate the healthy and the infected model with the iMAT algorithm.
+* [```Generation_GIMME_alt.m```](/Code/Matlab/Generation_Gimme_alt.m): A function that generate the healthy and the infected model with the GIMME algorithm.
 
 ## Analysis and visualisation (Python)
 The analysis of extracted models and the visualisation of the obtained results were performed in Python. The main files are as follows:
