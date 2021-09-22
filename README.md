@@ -1,4 +1,4 @@
-# COVID_GEMs
+# COVID: GEMs and MEMs
 
 This repository is supplementing the paper **Genome-scale metabolic modelling of COVID-19: Integration of omics data to generate and analyse COVID-19 specific genome-scale metabolic models**. 
 
