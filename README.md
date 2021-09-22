@@ -12,7 +12,7 @@ This repository is supplementing the paper **Genome-scale metabolic modelling of
 * [```Lung.sh```](/Code/Linux/Lung.sh): Downloads the Lung RNA-seq fastq files and generate the quantification with Kallisto. 
 
 ## Model extraction (Matlab)
-* [```Main.m```](/Code/Matlab/Main.m): A script that allowsthe user to choose the type of cell he wants to generate and with which MEM.
+* [```Main.m```](/Code/Matlab/Main.m): A script that allows the user to choose the type of cell he wants to generate and with which MEM.
 * [```Generation_iMAT_alt.m```](/Code/Matlab/Generation_iMAT_alt.m): A function that generate the healthy and infected model with iMAT algorithm.
 * [```Generation_GIMME_alt.m```](/Code/Matlab/Generation_Gimme_alt.m): A function that generate the healthy and infected model with GIMME algorithm.
 
