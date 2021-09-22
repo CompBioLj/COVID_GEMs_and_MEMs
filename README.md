@@ -1,6 +1,6 @@
 # COVID_GEMs
 
-This repository is supplementing the paper **Genome-scale metabolic modelling of COVID-19]{Integration of omics data to generate and analyse COVID-19 specific genome-scale metabolic models**. 
+This repository is supplementing the paper **Genome-scale metabolic modelling of COVID-19: Integration of omics data to generate and analyse COVID-19 specific genome-scale metabolic models**. 
 
 
 ## Data preprocessing (Shell)
