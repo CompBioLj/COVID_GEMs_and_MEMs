@@ -1,0 +1,77 @@
+subsystem;Gimme;imat;Tinit;init
+Exchange/demand reactions;0;0;1;1
+Oxidative phosphorylation;1;1;0;0
+Nicotinate and nicotinamide metabolism;1;0;-1;1
+Cholesterol biosynthesis 2;0;0;0;-1
+Lipoic acid metabolism;-1;0;0;0
+Protein modification;0;0;1;0
+Vitamin A metabolism;-1;0;0;0
+Vitamin D metabolism;-1;0;0;-1
+Vitamin C metabolism;-1;0;0;0
+Carnitine shuttle (cytosolic);1;0;0;-1
+Hippurate metabolism;-1;0;0;0
+Beta oxidation of odd-chain fatty acids (mitochondrial);0;-1;0;0
+Estrogen metabolism;0;-1;0;0
+Starch and sucrose metabolism;1;0;-1;0
+Xenobiotics metabolism;0;-1;0;0
+Pyrimidine metabolism;1;0;1;1
+Pentose and glucuronate interconversions;-1;0;0;0
+Retinol metabolism;-1;0;0;1
+Keratan sulfate degradation;0;-1;0;0
+Fatty acid biosynthesis (even-chain);1;1;1;0
+Fatty acid biosynthesis (unsaturated);-1;0;0;0
+Vitamin E metabolism;-1;0;0;-1
+Pyruvate metabolism;1;0;1;1
+Artificial reactions;0;0;0;-1
+Thiamine metabolism;1;0;0;0
+Carnitine shuttle (mitochondrial);0;0;0;-1
+C5-branched dibasic acid metabolism;1;0;0;1
+Aminoacyl-tRNA biosynthesis;1;-1;0;1
+Fatty acid activation (cytosolic);1;0;1;1
+Galactose metabolism;-1;0;0;0
+Omega-6 fatty acid metabolism;-1;0;0;0
+Beta oxidation of even-chain fatty acids (mitochondrial);0;0;-1;0
+Cholesterol biosynthesis 1 (Bloch pathway) ;0;0;0;-1
+Vitamin B6 metabolism;0;0;1;0
+Transport reactions;0;1;0;-1
+Nucleotide metabolism;1;0;0;0
+CoA synthesis;0;0;0;-1
+Fatty acid elongation (odd-chain);1;0;0;0
+Glycolysis / Gluconeogenesis;1;0;0;1
+Acylglycerides metabolism;0;0;0;-1
+Cholesterol biosynthesis 3 (Kandustch-Russell pathway);0;-1;0;0
+Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism;-1;0;0;0
+Fatty acid desaturation (even-chain);-1;0;0;0
+Urea cycle;0;-1;0;0
+Fatty acid desaturation (odd-chain);-1;0;0;0
+Fatty acid oxidation;-1;0;0;0
+Alanine, aspartate and glutamate metabolism;-1;0;0;0
+Glutathione metabolism;-1;0;0;1
+Leukotriene metabolism;0;-1;0;0
+Acyl-CoA hydrolysis;0;-1;1;-1
+Cysteine and methionine metabolism;-1;0;0;0
+Chondroitin sulfate degradation;0;1;0;0
+Heme degradation;1;-1;0;0
+Glycerophospholipid metabolism;0;0;0;-1
+Protein degradation;-1;0;0;0
+Purine metabolism;1;0;-1;1
+Phenylalanine metabolism;0;-1;0;0
+Vitamin B12 metabolism;-1;0;0;0
+Ether lipid metabolism;0;1;0;1
+Lysine metabolism;0;0;0;-1
+Ubiquinone synthesis;0;0;0;-1
+Drug metabolism;-1;0;0;0
+Omega-3 fatty acid metabolism;-1;1;0;1
+Fatty acid elongation (even-chain);1;0;0;0
+Pantothenate and CoA biosynthesis;0;0;-1;-1
+Phenylalanine, tyrosine and tryptophan biosynthesis;0;-1;0;0
+Fatty acid activation (endoplasmic reticular);0;-1;0;0
+Glycosphingolipid biosynthesis-globo series;-1;0;0;0
+Glycerolipid metabolism;1;0;0;0
+Folate metabolism;0;0;1;1
+Terpenoid backbone biosynthesis;0;0;0;-1
+Formation and hydrolysis of cholesterol esters;0;-1;0;0
+Fatty acid biosynthesis (odd-chain);1;1;0;0
+Pentose phosphate pathway;1;0;0;0
+Histidine metabolism;0;-1;-1;0
+Glycine, serine and threonine metabolism;1;0;0;0

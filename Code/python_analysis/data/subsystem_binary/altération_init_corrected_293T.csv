@@ -1,0 +1,106 @@
+subsystem;sizes;up_MW;down_MW;up_KS;down_KS
+Transport reactions;885;0;0;0;0
+Starch and sucrose metabolism;9;0;1;0;1
+Sphingolipid metabolism;18;0;0;0;0
+Fatty acid oxidation;280;0;0;0;0
+Oxidative phosphorylation;8;0;0;0;0
+Fatty acid biosynthesis;45;0;0;0;0
+Pyrimidine metabolism;41;1;0;1;0
+Cholesterol metabolism;36;0;0;0;0
+Acylglycerides metabolism;7;0;0;0;0
+Pool reactions;8;0;0;0;0
+Fatty acid activation (cytosolic);60;1;1;1;1
+Acyl-CoA hydrolysis;61;1;1;1;1
+Glycerophospholipid metabolism;31;0;0;0;0
+Exchange/demand reactions;134;1;1;1;1
+Arachidonic acid metabolism;41;0;0;0;0
+Leukotriene metabolism;58;0;0;0;0
+Prostaglandin biosynthesis;8;0;0;0;0
+Bile acid biosynthesis;16;0;0;0;0
+Fatty acid biosynthesis (even-chain);30;1;0;1;0
+Fatty acid elongation (even-chain);21;0;0;0;0
+Fatty acid desaturation (even-chain);13;0;0;0;0
+Fatty acid biosynthesis (unsaturated);33;0;0;0;0
+Carnitine shuttle (mitochondrial);21;0;0;0;0
+Carnitine shuttle (cytosolic);14;0;0;0;0
+Beta oxidation of even-chain fatty acids (mitochondrial);28;0;1;0;0
+Beta oxidation of unsaturated fatty acids (n-9) (mitochondrial);19;0;0;0;0
+Beta oxidation of di-unsaturated fatty acids (n-6) (mitochondrial);19;0;0;0;0
+Alanine, aspartate and glutamate metabolism;13;0;0;0;0
+Glycine, serine and threonine metabolism;18;0;0;0;0
+Pyruvate metabolism;19;1;0;1;0
+Glutathione metabolism;13;0;0;0;0
+Pantothenate and CoA biosynthesis;12;0;1;0;0
+Galactose metabolism;8;0;0;0;0
+Miscellaneous;19;0;0;0;0
+ROS detoxification;5;0;0;0;0
+Nucleotide metabolism;81;0;0;0;0
+Porphyrin metabolism;8;0;0;0;0
+Nicotinate and nicotinamide metabolism;10;0;1;0;1
+Purine metabolism;64;0;1;0;1
+Pentose phosphate pathway;19;0;0;0;0
+Vitamin B6 metabolism;7;1;0;1;0
+Sulfur metabolism;4;0;0;0;0
+Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism;33;0;0;0;0
+Amino sugar and nucleotide sugar metabolism;10;0;0;0;0
+Glycolysis / Gluconeogenesis;27;0;0;0;0
+Cysteine and methionine metabolism;17;0;0;0;0
+Fructose and mannose metabolism;8;0;0;0;0
+Folate metabolism;24;1;0;1;0
+Arginine and proline metabolism;31;0;0;0;0
+Biopterin metabolism;8;0;0;0;0
+Pentose and glucuronate interconversions;7;0;0;0;0
+Protein degradation;4;0;0;0;0
+Histidine metabolism;3;0;1;0;1
+Riboflavin metabolism;4;0;0;0;0
+Inositol phosphate metabolism;34;0;0;0;0
+Retinol metabolism;11;0;0;0;0
+Phenylalanine, tyrosine and tryptophan biosynthesis;9;0;0;0;0
+Protein modification;3;1;0;1;0
+Tyrosine metabolism;5;0;0;0;0
+Eicosanoid metabolism;9;0;0;0;0
+C5-branched dibasic acid metabolism;5;0;0;0;0
+Isolated;8;0;0;0;0
+Xenobiotics metabolism;26;0;0;0;0
+Valine, leucine, and isoleucine metabolism;14;0;0;0;0
+Propanoate metabolism;4;0;0;0;0
+Drug metabolism;14;0;0;0;0
+Glycerolipid metabolism;68;0;0;0;0
+Glycosphingolipid metabolism;7;0;0;0;0
+Glycosphingolipid biosynthesis-globo series;3;0;0;0;0
+Ether lipid metabolism;7;0;0;0;0
+Beta oxidation of poly-unsaturated fatty acids (mitochondrial);3;0;0;0;0
+Butanoate metabolism;5;0;0;0;0
+Cholesterol biosynthesis 1 (Bloch pathway) ;28;0;0;0;0
+N-glycan metabolism;2;0;0;0;0
+Cholesterol biosynthesis 2;5;0;0;0;0
+Cholesterol biosynthesis 3 (Kandustch-Russell pathway);16;0;0;0;0
+Steroid metabolism;5;0;0;0;0
+Estrogen metabolism;36;0;0;0;0
+Fatty acid biosynthesis (odd-chain);30;0;0;0;0
+Fatty acid elongation (odd-chain);13;0;0;0;0
+Fatty acid desaturation (odd-chain);3;0;0;0;0
+Omega-6 fatty acid metabolism;33;0;0;0;0
+Linoleate metabolism;6;0;0;0;0
+Omega-3 fatty acid metabolism;39;0;0;0;0
+Carnitine shuttle (endoplasmic reticular);3;0;0;0;0
+Fatty acid activation (endoplasmic reticular);56;0;0;0;0
+Beta oxidation of odd-chain fatty acids (mitochondrial);27;0;0;0;0
+Beta oxidation of unsaturated fatty acids (n-7) (mitochondrial);12;0;0;0;0
+Beta oxidation of phytanic acid (peroxisomal);2;0;0;0;0
+Beta oxidation of branched-chain fatty acids (mitochondrial);9;0;0;0;0
+Formation and hydrolysis of cholesterol esters;111;0;0;0;0
+Tryptophan metabolism;2;0;0;0;0
+Beta-alanine metabolism;4;0;0;0;0
+Serotonin and melatonin biosynthesis;2;0;0;0;0
+Lysine metabolism;14;0;0;0;0
+Aminoacyl-tRNA biosynthesis;21;0;0;0;0
+Protein assembly;2;0;0;0;0
+Lipoic acid metabolism;2;0;0;0;0
+Vitamin E metabolism;22;0;0;0;0
+Metabolism of other amino acids;4;0;0;0;0
+Glycosylphosphatidylinositol (GPI)-anchor biosynthesis;3;0;0;0;0
+Vitamin B12 metabolism;3;0;0;0;0
+Artificial reactions;2;0;0;0;0
+Phenylalanine metabolism;2;0;0;0;0
+CoA synthesis;2;0;0;0;0

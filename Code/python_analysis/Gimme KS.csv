@@ -1,0 +1,62 @@
+subsystem;A549;293T;CALU;Lung;NHBE
+Protein degradation;-1;-1;0;0;0
+Heme degradation;1;0;1;1;1
+Omega-6 fatty acid metabolism;-1;0;0;0;0
+Cholesterol biosynthesis 2;0;0;-1;0;-1
+Omega-3 fatty acid metabolism;-1;0;0;0;0
+Pentose and glucuronate interconversions;-1;-1;1;0;0
+C5-branched dibasic acid metabolism;1;0;0;0;0
+Protein assembly;0;-1;1;-1;0
+Cysteine and methionine metabolism;-1;1;0;0;0
+Fatty acid biosynthesis;1;-1;-1;0;-1
+Transport reactions;0;0;0;1;0
+Fatty acid desaturation (odd-chain);-1;0;1;0;1
+CoA catabolism;0;0;0;-1;0
+Fatty acid oxidation;-1;1;1;0;1
+Purine metabolism;1;1;-1;1;1
+Glycolysis / Gluconeogenesis;1;1;-1;0;1
+Galactose metabolism;-1;-1;-1;-1;1
+Fatty acid activation (endoplasmic reticular);0;1;-1;0;0
+Acylglycerides metabolism;0;0;0;-1;0
+Glycine, serine and threonine metabolism;1;0;1;1;0
+Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism;-1;-1;-1;0;0
+Nucleotide metabolism;1;0;1;-1;1
+Carnitine shuttle (mitochondrial);0;-1;0;0;0
+CoA synthesis;0;-1;0;1;1
+Fatty acid activation (cytosolic);1;1;1;1;1
+Fatty acid elongation (odd-chain);1;0;0;0;0
+Alanine, aspartate and glutamate metabolism;-1;-1;0;0;0
+Linoleate metabolism;0;0;0;0;1
+Dietary fiber binding;0;-1;-1;0;-1
+Pentose phosphate pathway;1;1;-1;1;1
+Fatty acid biosynthesis (odd-chain);1;-1;1;0;1
+Folate metabolism;0;-1;-1;0;-1
+Aminoacyl-tRNA biosynthesis;1;1;1;-1;-1
+Retinol metabolism;-1;1;1;1;1
+Glycosphingolipid biosynthesis-globo series;-1;-1;1;-1;1
+Fatty acid biosynthesis (unsaturated);-1;-1;0;0;0
+Vitamin E metabolism;-1;0;-1;-1;-1
+Thiamine metabolism;1;-1;1;0;1
+ROS detoxification;0;-1;-1;0;0
+Pyrimidine metabolism;1;-1;1;1;1
+Drug metabolism;-1;-1;-1;-1;1
+Fatty acid desaturation (even-chain);-1;-1;1;0;1
+Riboflavin metabolism;0;1;0;-1;-1
+Vitamin A metabolism;-1;1;-1;0;-1
+Vitamin D metabolism;-1;1;-1;-1;-1
+Pantothenate and CoA biosynthesis;-1;0;0;0;0
+Starch and sucrose metabolism;1;1;-1;-1;-1
+Vitamin B12 metabolism;-1;0;1;0;-1
+Vitamin C metabolism;-1;-1;1;1;-1
+Glucocorticoid biosynthesis;0;0;0;-1;-1
+Fatty acid elongation (even-chain);1;0;0;0;0
+Pyruvate metabolism;1;0;1;0;0
+Hippurate metabolism;-1;0;0;0;1
+Nicotinate and nicotinamide metabolism;1;-1;-1;1;-1
+Glycerolipid metabolism;1;1;1;1;1
+Fatty acid biosynthesis (even-chain);1;1;-1;0;1
+Glutathione metabolism;-1;0;0;1;0
+Oxidative phosphorylation;1;-1;0;0;0
+Carnitine shuttle (cytosolic);1;-1;-1;-1;-1
+Lipoic acid metabolism;-1;0;0;0;-1
+Biopterin metabolism;0;-1;-1;-1;0

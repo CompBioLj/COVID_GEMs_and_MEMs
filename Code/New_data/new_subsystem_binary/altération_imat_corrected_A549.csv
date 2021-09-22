@@ -1,0 +1,105 @@
+subsystem;sizes;up_MW;down_MW;up_KS;down_KS
+Transport reactions;1213;1;0;1;0
+Drug metabolism;115;0;0;0;0
+Eicosanoid metabolism;15;1;0;1;0
+Valine, leucine, and isoleucine metabolism;8;0;0;0;0
+Tyrosine metabolism;14;0;0;0;0
+Histidine metabolism;4;0;0;0;0
+Alanine, aspartate and glutamate metabolism;9;0;0;0;0
+Bile acid biosynthesis;48;0;0;0;0
+Fatty acid oxidation;90;0;0;0;0
+Pentose phosphate pathway;18;0;0;0;0
+Lysine metabolism;3;0;0;0;0
+Starch and sucrose metabolism;4;0;0;0;0
+Sphingolipid metabolism;12;0;0;0;0
+Dietary fiber binding;3;0;0;0;0
+ROS detoxification;7;0;0;0;0
+Glycerophospholipid metabolism;30;0;1;0;1
+Fatty acid biosynthesis;49;0;0;0;0
+Cholesterol metabolism;19;0;0;0;0
+N-glycan metabolism;4;0;0;0;0
+Pyrimidine metabolism;39;0;0;0;0
+Exchange/demand reactions;470;0;0;0;0
+Miscellaneous;27;0;0;0;0
+Glycine, serine and threonine metabolism;11;0;0;0;0
+Acylglycerides metabolism;10;0;1;0;1
+Pool reactions;10;0;0;0;0
+Fatty acid activation (cytosolic);60;0;0;0;0
+Acyl-CoA hydrolysis;2;1;0;1;0
+Glycerolipid metabolism;66;0;0;0;0
+Inositol phosphate metabolism;6;0;0;0;0
+Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism;30;0;0;0;0
+Nicotinate and nicotinamide metabolism;12;0;0;0;0
+Glycosphingolipid metabolism;12;0;0;0;0
+Glycosphingolipid biosynthesis-globo series;3;0;1;0;1
+Arachidonic acid metabolism;11;1;0;1;0
+Steroid metabolism;14;0;0;0;0
+Leukotriene metabolism;45;0;0;0;0
+Prostaglandin biosynthesis;19;0;0;0;0
+Butanoate metabolism;4;0;1;0;1
+Cholesterol biosynthesis 2;2;0;0;0;0
+Pyruvate metabolism;19;0;0;0;0
+Bile acid recycling;6;0;0;0;0
+Androgen metabolism;9;0;0;0;0
+Estrogen metabolism;52;0;0;0;0
+Vitamin D metabolism;20;0;0;0;0
+Fatty acid biosynthesis (even-chain);29;0;0;0;0
+Fatty acid elongation (even-chain);21;0;0;0;0
+Fatty acid biosynthesis (odd-chain);30;0;0;0;0
+Fatty acid elongation (odd-chain);13;0;0;0;0
+Fatty acid desaturation (even-chain);13;0;0;0;0
+Fatty acid desaturation (odd-chain);3;1;0;1;0
+Fatty acid biosynthesis (unsaturated);33;0;0;0;0
+Omega-6 fatty acid metabolism;28;0;0;0;0
+Linoleate metabolism;8;0;0;0;0
+Omega-3 fatty acid metabolism;39;0;0;0;0
+Carnitine shuttle (cytosolic);8;0;0;0;0
+Carnitine shuttle (mitochondrial);12;0;0;0;0
+Carnitine shuttle (endoplasmic reticular);14;0;0;0;0
+Fatty acid activation (endoplasmic reticular);9;0;0;0;0
+Beta oxidation of even-chain fatty acids (mitochondrial);8;0;0;0;0
+Beta oxidation of phytanic acid (peroxisomal);3;0;0;0;0
+Glutathione metabolism;11;0;0;0;0
+Cysteine and methionine metabolism;17;0;0;0;0
+Glycolysis / Gluconeogenesis;21;0;0;0;0
+Galactose metabolism;11;0;0;0;0
+Nucleotide metabolism;47;0;0;0;0
+Oxidative phosphorylation;8;0;0;0;0
+Porphyrin metabolism;11;0;0;0;0
+Purine metabolism;55;0;0;0;0
+Vitamin B6 metabolism;4;0;0;0;0
+Arginine and proline metabolism;10;0;0;0;0
+Beta-alanine metabolism;4;0;0;0;0
+Biopterin metabolism;11;0;0;0;0
+Phenylalanine, tyrosine and tryptophan biosynthesis;39;0;0;0;0
+Fructose and mannose metabolism;5;0;0;0;0
+Folate metabolism;10;0;0;0;0
+Propanoate metabolism;3;0;1;0;1
+Serotonin and melatonin biosynthesis;6;0;0;0;0
+Pentose and glucuronate interconversions;6;0;1;0;1
+Ascorbate and aldarate metabolism;4;0;0;0;0
+Vitamin E metabolism;23;0;0;0;0
+Riboflavin metabolism;4;0;0;0;0
+Retinol metabolism;50;0;0;0;0
+Xenobiotics metabolism;3;0;0;0;0
+Metabolism of other amino acids;2;1;0;1;0
+O-glycan metabolism;4;0;0;0;0
+Chondroitin sulfate degradation;23;0;0;0;0
+Protein modification;3;0;0;0;0
+Tryptophan metabolism;4;0;0;0;0
+Amino sugar and nucleotide sugar metabolism;5;0;0;0;0
+Isolated;8;0;0;0;0
+Artificial reactions;8;0;0;0;0
+Phenylalanine metabolism;3;0;0;0;0
+Vitamin A metabolism;3;0;0;0;0
+Heme degradation;2;1;0;1;0
+;3;1;0;1;0
+Heme synthesis;3;0;0;0;0
+Cholesterol biosynthesis 1 (Bloch pathway) ;3;1;0;1;0
+Formation and hydrolysis of cholesterol esters;2;1;0;1;0
+Pantothenate and CoA biosynthesis;5;0;0;0;0
+Thiamine metabolism;2;0;0;0;0
+Aminoacyl-tRNA biosynthesis;21;0;0;0;0
+Protein assembly;2;0;0;0;0
+Vitamin B12 metabolism;4;0;0;0;0
+CoA synthesis;2;0;0;0;0

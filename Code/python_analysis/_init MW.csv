@@ -1,0 +1,57 @@
+subsystem;CALU;NHBE;Lung;A549;293T
+Exchange/demand reactions;1;1;1;1;1
+Oxidative phosphorylation;0;-1;0;0;0
+Nicotinate and nicotinamide metabolism;-1;1;0;-1;0
+Protein modification;1;1;-1;0;1
+Vitamin A metabolism;0;1;0;0;0
+Amino sugar and nucleotide sugar metabolism;0;1;0;0;0
+Bile acid recycling;0;1;-1;1;0
+Carnitine shuttle (cytosolic);0;1;0;0;0
+Starch and sucrose metabolism;-1;0;0;-1;0
+Sphingolipid metabolism;0;0;0;1;0
+Pyrimidine metabolism;1;0;1;-1;0
+Fatty acid biosynthesis (even-chain);1;0;1;0;0
+Riboflavin metabolism;0;0;0;-1;0
+ROS detoxification;0;-1;0;0;0
+Fatty acid biosynthesis (unsaturated);0;0;0;1;0
+Fructose and mannose metabolism;0;1;0;0;0
+Propanoate metabolism;0;0;-1;1;0
+Pyruvate metabolism;1;1;0;-1;-1
+Biopterin metabolism;0;1;1;0;0
+Carnitine shuttle (mitochondrial);0;1;0;-1;0
+C5-branched dibasic acid metabolism;0;1;0;0;-1
+Aminoacyl-tRNA biosynthesis;0;0;-1;0;1
+Fatty acid activation (cytosolic);1;-1;1;-1;-1
+Beta oxidation of even-chain fatty acids (mitochondrial);-1;-1;-1;-1;0
+Omega-6 fatty acid metabolism;0;0;1;1;0
+Vitamin B6 metabolism;1;0;0;0;0
+Beta oxidation of phytanic acid (peroxisomal);0;0;0;1;0
+Transport reactions;0;1;1;1;1
+Nucleotide metabolism;0;1;1;-1;1
+Fatty acid elongation (odd-chain);0;0;0;1;0
+Glycolysis / Gluconeogenesis;0;1;-1;1;0
+Acylglycerides metabolism;0;0;0;-1;0
+Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism;0;-1;0;-1;0
+Fatty acid desaturation (even-chain);0;-1;-1;1;0
+Fatty acid desaturation (odd-chain);0;0;0;1;0
+Sulfur metabolism;0;0;-1;0;0
+Biotin metabolism;0;0;1;0;0
+Glutathione metabolism;0;-1;0;1;0
+Acyl-CoA hydrolysis;1;1;1;1;1
+Tyrosine metabolism;0;0;1;0;-1
+Glycerophospholipid metabolism;0;0;0;1;0
+Purine metabolism;-1;1;-1;-1;0
+Ether lipid metabolism;0;0;0;1;0
+Drug metabolism;0;-1;0;0;0
+Omega-3 fatty acid metabolism;0;0;0;1;0
+Isolated;0;-1;0;0;1
+Fatty acid elongation (even-chain);0;0;1;1;0
+Pantothenate and CoA biosynthesis;-1;0;0;0;0
+Glycosphingolipid biosynthesis-globo series;0;0;0;-1;0
+Miscellaneous;0;0;0;1;0
+Bile acid biosynthesis;0;0;0;1;0
+Folate metabolism;1;0;0;0;0
+Inositol phosphate metabolism;0;1;0;0;0
+Pentose phosphate pathway;0;0;-1;0;0
+Protein assembly;0;0;-1;0;0
+Histidine metabolism;-1;0;0;0;0

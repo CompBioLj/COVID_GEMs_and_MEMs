@@ -1,0 +1,18 @@
+\begin{tabular}{llrr}
+\toprule
+    factor &     group &        p &        q \\
+\midrule
+       MEM &     GIMME &  0.00000 &  0.00000 \\
+       MEM &      iMAT &  0.00000 &  0.00000 \\
+       MEM &      INIT &  0.00000 &  0.00000 \\
+       MEM &     tINIT &  0.00000 &  0.00000 \\
+ infection &   healthy &  0.27703 &  0.30473 \\
+ infection &  infected &  0.98165 &  0.98165 \\
+   dataset &      293T &  0.01407 &  0.02182 \\
+   dataset &      A549 &  0.00055 &  0.00120 \\
+   dataset &    Calu-3 &  0.06018 &  0.07356 \\
+   dataset &      Lung &  0.01587 &  0.02182 \\
+   dataset &       HBE &  0.00900 &  0.01649 \\
+\bottomrule
+\end{tabular}
+

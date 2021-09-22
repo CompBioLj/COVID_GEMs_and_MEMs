@@ -1,0 +1,78 @@
+subsystem;CALU;NHBE;Lung;A549;293T
+Exchange/demand reactions;1;0;1;1;1
+Oxidative phosphorylation;0;0;1;1;1
+Cholesterol biosynthesis 2;-1;-1;1;-1;-1
+Nicotinate and nicotinamide metabolism;1;0;0;-1;0
+Vitamin A metabolism;0;0;1;-1;1
+Vitamin D metabolism;-1;-1;-1;-1;-1
+Amino sugar and nucleotide sugar metabolism;0;0;0;1;0
+Carnitine shuttle (cytosolic);-1;0;0;0;0
+Heme synthesis;0;-1;0;-1;-1
+Carnitine shuttle (peroxisomal);0;-1;0;0;0
+Beta oxidation of odd-chain fatty acids (mitochondrial);0;1;-1;-1;-1
+Starch and sucrose metabolism;0;1;0;-1;0
+Androgen metabolism;0;-1;0;0;-1
+Sphingolipid metabolism;0;0;0;1;0
+Pyrimidine metabolism;1;-1;1;1;-1
+Pentose and glucuronate interconversions;0;0;0;1;0
+Porphyrin metabolism;0;1;0;0;0
+Retinol metabolism;1;-1;-1;-1;-1
+Fatty acid biosynthesis (even-chain);0;0;-1;-1;0
+Beta oxidation of di-unsaturated fatty acids (n-6) (mitochondrial);0;0;-1;0;1
+ROS detoxification;0;1;0;-1;0
+Beta oxidation of unsaturated fatty acids (n-7) (mitochondrial);0;0;-1;1;0
+Fructose and mannose metabolism;0;-1;0;1;1
+Vitamin E metabolism;-1;-1;-1;-1;-1
+Propanoate metabolism;0;1;-1;1;0
+Pyruvate metabolism;1;0;0;-1;0
+Biopterin metabolism;0;0;1;0;0
+Artificial reactions;-1;-1;1;1;-1
+Thiamine metabolism;0;0;-1;0;-1
+Carnitine shuttle (mitochondrial);-1;0;0;1;0
+C5-branched dibasic acid metabolism;1;1;0;0;0
+Aminoacyl-tRNA biosynthesis;1;-1;0;-1;0
+Fatty acid activation (cytosolic);1;1;1;-1;1
+Omega-6 fatty acid metabolism;0;-1;0;0;1
+Beta oxidation of even-chain fatty acids (mitochondrial);0;-1;-1;-1;1
+Cholesterol biosynthesis 1 (Bloch pathway) ;-1;-1;1;0;-1
+Vitamin B6 metabolism;0;-1;-1;0;1
+Beta oxidation of phytanic acid (peroxisomal);0;0;0;1;0
+Transport reactions;-1;1;1;1;1
+Nucleotide metabolism;0;1;1;0;1
+CoA synthesis;-1;1;-1;1;1
+Fatty acid elongation (odd-chain);0;1;0;-1;0
+Glycolysis / Gluconeogenesis;1;1;1;1;1
+Acylglycerides metabolism;-1;-1;0;1;0
+Cholesterol biosynthesis 3 (Kandustch-Russell pathway);0;0;1;0;0
+Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism;0;0;0;-1;0
+Fatty acid desaturation (even-chain);0;1;0;-1;0
+Fatty acid desaturation (odd-chain);0;1;0;0;0
+Butanoate metabolism;0;-1;0;0;0
+Alanine, aspartate and glutamate metabolism;0;1;0;0;1
+Glutathione metabolism;1;1;0;1;1
+Beta oxidation of even-chain fatty acids (peroxisomal);0;0;1;0;0
+Acyl-CoA hydrolysis;-1;1;1;1;1
+Beta oxidation of unsaturated fatty acids (n-9) (peroxisomal);0;1;0;0;0
+Glycerophospholipid metabolism;-1;-1;0;-1;-1
+Purine metabolism;1;1;1;1;1
+Vitamin B12 metabolism;0;-1;-1;-1;-1
+Phenylalanine metabolism;0;0;0;1;0
+Ether lipid metabolism;1;-1;0;0;0
+Lysine metabolism;-1;0;-1;-1;0
+Ubiquinone synthesis;-1;0;-1;-1;-1
+Omega-3 fatty acid metabolism;1;0;0;1;1
+Isolated;0;0;0;1;0
+Pantothenate and CoA biosynthesis;-1;1;-1;0;-1
+Beta oxidation of unsaturated fatty acids (n-9) (mitochondrial);0;-1;-1;0;0
+Fatty acid activation (endoplasmic reticular);0;0;1;0;0
+Glycerolipid metabolism;0;0;0;0;1
+Carnitine shuttle (endoplasmic reticular);0;0;0;0;-1
+Bile acid biosynthesis;0;0;0;1;0
+Folate metabolism;1;0;0;0;0
+Terpenoid backbone biosynthesis;-1;1;-1;-1;-1
+Beta oxidation of odd-chain fatty acids (peroxisomal);0;0;1;0;1
+Formation and hydrolysis of cholesterol esters;0;0;-1;0;0
+Fatty acid biosynthesis (odd-chain);0;1;0;-1;0
+Fatty acid biosynthesis;0;0;0;1;0
+Pentose phosphate pathway;0;1;1;0;1
+Glycine, serine and threonine metabolism;0;0;0;-1;0
