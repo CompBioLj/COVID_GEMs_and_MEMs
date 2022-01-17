@@ -28,4 +28,8 @@ The analysis of extracted models and the visualisation of the obtained results w
 * [`subsystems_enrichment_plot.ipynb`](subsystems_enrichment_plot.ipynb): plots the results of the enrichment analysis.
 
 ## Results
-* [`results_PCA`](results_PCA)
+* [`results_basic`](results_basic): results of the basic statistical analyses.
+* [`results_PCA`](results_PCA): results of the PCA performed on the obtained reactions.
+* [`results_PCA_sampling`](results_PCA_sampling): results of the PCA performed on the reactions with nonzero flux values in flux samples.
+* [`results_enrichment`](results_enrichment): results of the enrichment analyses.
+* [`results_enrichment/reactions_subsystems.xlsx`](results_enrichment/reactions_subsystems.xlsx): full results of the enrichment analysis (for all metabolic reactions).
