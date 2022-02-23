@@ -49,19 +49,19 @@ switch (Database)
         file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');
         switch (model_choice)
             case 'Gimme'
-                [Gimme_model_H_NHBE_alt, Gimme_model_I_NHBE_alt]=Generation_Gimme_alt(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_NHBE_alt, Gimme_model_I_NHBE_alt]=generate_GIMME(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
                 Gimme_model_H_NHBE_alt.rules(204)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_NHBE_alt.rxns{204})));
                 writeCbModel(Gimme_model_H_NHBE_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_NHBE_alt, 'format','mat', 'fileName', file_name_Infected)
                 
             case 'IMAT'
-                [iMAT_model_H_NHBE_alt, iMAT_model_I_NHBE_alt]=Generation_iMAT_alt(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
+                [iMAT_model_H_NHBE_alt, iMAT_model_I_NHBE_alt]=generate_iMAT(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
                 iMAT_model_I_NHBE_alt.rules(2872)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),iMAT_model_I_NHBE_alt.rxns{2872})));   
                 writeCbModel(iMAT_model_H_NHBE_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(iMAT_model_I_NHBE_alt, 'format','mat', 'fileName', file_name_Infected)
             
             case 'tINIT'
-                [tINIT_model_H_NHBE,tINIT_model_I_NHBE]=tINIT_generation(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
+                [tINIT_model_H_NHBE,tINIT_model_I_NHBE]=generate_tINIT(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
                 tINIT_model_H_NHBE=ravenCobraWrapper(tINIT_model_H_NHBE);
                 tINIT_model_I_NHBE=rmfield(tINIT_model_I_NHBE,'rules');
                 tINIT_model_I_NHBE=ravenCobraWrapper(tINIT_model_I_NHBE);
@@ -69,7 +69,7 @@ switch (Database)
                 writeCbModel(tINIT_model_I_NHBE, 'format','mat', 'fileName', file_name_Infected)
                 
             case 'INIT'
-                [INIT_model_H_NHBE,INIT_model_I_NHBE]=INIT_generation_good(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
+                [INIT_model_H_NHBE,INIT_model_I_NHBE]=generate_INIT(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
                 INIT_model_H_NHBE=ravenCobraWrapper(INIT_model_H_NHBE);
                 INIT_model_I_NHBE=rmfield(INIT_model_I_NHBE,'rules');
                 INIT_model_I_NHBE=ravenCobraWrapper(INIT_model_I_NHBE);
@@ -81,7 +81,7 @@ switch (Database)
                 model_choice='Gimme'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [Gimme_model_H_NHBE_alt, Gimme_model_I_NHBE_alt]=Generation_Gimme_alt(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_NHBE_alt, Gimme_model_I_NHBE_alt]=generate_GIMME(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
                 Gimme_model_H_NHBE_alt.rules(204)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_NHBE_alt.rxns{204})));
                 writeCbModel(Gimme_model_H_NHBE_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_NHBE_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -90,7 +90,7 @@ switch (Database)
                 model_choice='IMAT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [iMAT_model_H_NHBE_alt, iMAT_model_I_NHBE_alt]=Generation_iMAT_alt(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
+                [iMAT_model_H_NHBE_alt, iMAT_model_I_NHBE_alt]=generate_iMAT(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
                 iMAT_model_I_NHBE_alt.rules(2872)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),iMAT_model_I_NHBE_alt.rxns{2872})));   
                 writeCbModel(iMAT_model_H_NHBE_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(iMAT_model_I_NHBE_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -99,7 +99,7 @@ switch (Database)
                 model_choice='tINIT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [tINIT_model_H_NHBE,tINIT_model_I_NHBE]=tINIT_generation(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
+                [tINIT_model_H_NHBE,tINIT_model_I_NHBE]=generate_tINIT(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
                 tINIT_model_H_NHBE=ravenCobraWrapper(tINIT_model_H_NHBE);
                 tINIT_model_I_NHBE=rmfield(tINIT_model_I_NHBE,'rules');
                 tINIT_model_I_NHBE=ravenCobraWrapper(tINIT_model_I_NHBE);
@@ -111,7 +111,7 @@ switch (Database)
                 model_choice='INIT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [INIT_model_H_NHBE,INIT_model_I_NHBE]=INIT_generation_good(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
+                [INIT_model_H_NHBE,INIT_model_I_NHBE]=generate_INIT(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
                 INIT_model_H_NHBE=ravenCobraWrapper(INIT_model_H_NHBE);
                 INIT_model_I_NHBE=rmfield(INIT_model_I_NHBE,'rules');
                 INIT_model_I_NHBE=ravenCobraWrapper(INIT_model_I_NHBE);
@@ -146,25 +146,25 @@ switch (Database)
         file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');        
         switch (model_choice)
             case'Gimme'
-                [Gimme_model_H_A549_alt, Gimme_model_I_A549_alt]=Generation_Gimme_alt(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);               
+                [Gimme_model_H_A549_alt, Gimme_model_I_A549_alt]=generate_GIMME(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);               
                 Gimme_model_H_A549_alt.rules(206)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_A549_alt.rxns{206})));
                 writeCbModel(Gimme_model_H_A549_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_A549_alt, 'format','mat', 'fileName', file_name_Infected)
                 
             case'IMAT'
-                [IMAT_model_H_A549_alt, iMAT_model_I_A549_alt]=Generation_iMAT_alt(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_A549_alt, iMAT_model_I_A549_alt]=generate_iMAT(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);
                 iMAT_model_I_A549_alt.rules(2889)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_A549_alt.rxns{2889})));
                 writeCbModel(IMAT_model_H_A549_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(iMAT_model_I_A549_alt, 'format','mat', 'fileName', file_name_Infected)
                 
             case'tINIT'
-                [tINIT_model_H_A549,tINIT_model_I_A549]=tINIT_generation(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
+                [tINIT_model_H_A549,tINIT_model_I_A549]=generate_tINIT(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
                 tINIT_model_I_A549=rmfield(tINIT_model_I_A549,'rules')
                 tINIT_model_I_A549=ravenCobraWrapper(tINIT_model_I_A549)
                 writeCbModel(tINIT_model_H_A549, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(tINIT_model_I_A549, 'format','mat', 'fileName', file_name_Infected)
             case 'INIT'
-                [INIT_model_H_A549,INIT_model_I_A549]=INIT_generation_good(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
+                [INIT_model_H_A549,INIT_model_I_A549]=generate_INIT(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
                 INIT_model_H_A549=ravenCobraWrapper(INIT_model_H_A549)
                 writeCbModel(INIT_model_H_A549, 'format','mat', 'fileName', 'INIT_model_H_A549_alt.mat')
                 INIT_model_I_A549=rmfield(INIT_model_I_A549,'rules')
@@ -176,7 +176,7 @@ switch (Database)
                 model_choice='Gimme'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');     
-                [Gimme_model_H_A549_alt, Gimme_model_I_A549_alt]=Generation_Gimme_alt(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);               
+                [Gimme_model_H_A549_alt, Gimme_model_I_A549_alt]=generate_GIMME(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);               
                 Gimme_model_H_A549_alt.rules(206)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_A549_alt.rxns{206})));
                 writeCbModel(Gimme_model_H_A549_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_A549_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -185,7 +185,7 @@ switch (Database)
                 model_choice='IMAT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');     
-                [IMAT_model_H_A549_alt, iMAT_model_I_A549_alt]=Generation_iMAT_alt(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_A549_alt, iMAT_model_I_A549_alt]=generate_iMAT(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);
                 iMAT_model_I_A549_alt.rules(2889)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_A549_alt.rxns{2889})));
                 writeCbModel(IMAT_model_H_A549_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(iMAT_model_I_A549_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -194,7 +194,7 @@ switch (Database)
                 model_choice='tINIT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [tINIT_model_H_A549,tINIT_model_I_A549]=tINIT_generation(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
+                [tINIT_model_H_A549,tINIT_model_I_A549]=generate_tINIT(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
                 tINIT_model_I_A549=rmfield(tINIT_model_I_A549,'rules')
                 tINIT_model_I_A549=ravenCobraWrapper(tINIT_model_I_A549)
                 writeCbModel(tINIT_model_H_A549, 'format','mat', 'fileName', file_name_healthy)
@@ -204,7 +204,7 @@ switch (Database)
                 model_choice='INIT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [INIT_model_H_A549,INIT_model_I_A549]=INIT_generation_good(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
+                [INIT_model_H_A549,INIT_model_I_A549]=generate_INIT(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
                 INIT_model_H_A549=ravenCobraWrapper(INIT_model_H_A549)
                 writeCbModel(INIT_model_H_A549, 'format','mat', 'fileName', 'INIT_model_H_A549_alt.mat')
                 INIT_model_I_A549=rmfield(INIT_model_I_A549,'rules')
@@ -238,19 +238,19 @@ switch (Database)
         file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');        
         switch (model_choice)
             case'Gimme'
-                [Gimme_model_H_CALU_alt, Gimme_model_I_CALU_alt]=Generation_Gimme_alt(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_CALU_alt, Gimme_model_I_CALU_alt]=generate_GIMME(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
                 Gimme_model_H_CALU_alt.rules(206)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_CALU_alt.rxns{206})));
                 writeCbModel(Gimme_model_H_CALU_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_CALU_alt, 'format','mat', 'fileName', file_name_Infected)
            
             case'IMAT'
-                [IMAT_model_H_CALU_alt, iMAT_model_I_CALU_alt]=Generation_iMAT_alt(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_CALU_alt, iMAT_model_I_CALU_alt]=generate_iMAT(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
                 writeCbModel(IMAT_model_H_CALU_alt, 'format','mat', 'fileName', file_name_healthy)
                 iMAT_model_I_CALU_alt.rules(2822)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_CALU_alt.rxns{2822})));
                 writeCbModel(iMAT_model_I_CALU_alt, 'format','mat', 'fileName', file_name_Infected)
 
             case'tINIT'
-                [tINIT_model_H_CALU,tINIT_model_I_CALU]=tINIT_generation(CALU_Healthy_mean_INIT,CALU_Infected_mean_INIT)
+                [tINIT_model_H_CALU,tINIT_model_I_CALU]=generate_tINIT(CALU_Healthy_mean_INIT,CALU_Infected_mean_INIT)
                 tINIT_model_H_CALU=ravenCobraWrapper(tINIT_model_H_CALU)
                 tINIT_model_I_CALU=rmfield(tINIT_model_I_CALU,'rules')
                 tINIT_model_I_CALU=ravenCobraWrapper(tINIT_model_I_CALU)
@@ -258,7 +258,7 @@ switch (Database)
                 writeCbModel(tINIT_model_I_CALU, 'format','mat', 'fileName', file_name_Infected)
                 
             case'INIT'
-                [INIT_model_H_Lung,INIT_model_I_Lung]=INIT_generation_good(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [INIT_model_H_Lung,INIT_model_I_Lung]=generate_INIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 INIT_model_H_CALU=ravenCobraWrapper(INIT_model_H_CALU)
                 INIT_model_I_CALU=rmfield(INIT_model_I_CALU,'rules')
                 INIT_model_I_CALU=ravenCobraWrapper(INIT_model_I_CALU)
@@ -270,7 +270,7 @@ switch (Database)
                 model_choice='Gimme'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [Gimme_model_H_CALU_alt, Gimme_model_I_CALU_alt]=Generation_Gimme_alt(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_CALU_alt, Gimme_model_I_CALU_alt]=generate_GIMME(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
                 Gimme_model_H_CALU_alt.rules(206)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_CALU_alt.rxns{206})));
                 writeCbModel(Gimme_model_H_CALU_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_CALU_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -279,7 +279,7 @@ switch (Database)
                 model_choice='IMAT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [IMAT_model_H_CALU_alt, iMAT_model_I_CALU_alt]=Generation_iMAT_alt(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_CALU_alt, iMAT_model_I_CALU_alt]=generate_iMAT(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
                 writeCbModel(IMAT_model_H_CALU_alt, 'format','mat', 'fileName', file_name_healthy)
                 iMAT_model_I_CALU_alt.rules(2822)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_CALU_alt.rxns{2822})));
                 writeCbModel(iMAT_model_I_CALU_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -288,7 +288,7 @@ switch (Database)
                 model_choice='tINIT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [tINIT_model_H_CALU,tINIT_model_I_CALU]=tINIT_generation(CALU_Healthy_mean_INIT,CALU_Infected_mean_INIT)
+                [tINIT_model_H_CALU,tINIT_model_I_CALU]=generate_tINIT(CALU_Healthy_mean_INIT,CALU_Infected_mean_INIT)
                 tINIT_model_H_CALU=ravenCobraWrapper(tINIT_model_H_CALU)
                 tINIT_model_I_CALU=rmfield(tINIT_model_I_CALU,'rules')
                 tINIT_model_I_CALU=ravenCobraWrapper(tINIT_model_I_CALU)
@@ -299,7 +299,7 @@ switch (Database)
                 model_choice='INIT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [INIT_model_H_Lung,INIT_model_I_Lung]=INIT_generation_good(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [INIT_model_H_Lung,INIT_model_I_Lung]=generate_INIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 INIT_model_H_CALU=ravenCobraWrapper(INIT_model_H_CALU)
                 INIT_model_I_CALU=rmfield(INIT_model_I_CALU,'rules')
                 INIT_model_I_CALU=ravenCobraWrapper(INIT_model_I_CALU)
@@ -333,19 +333,19 @@ switch (Database)
         file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');  
         switch(model_choice)
             case'Gimme'
-                [Gimme_model_H_Lung_alt, Gimme_model_I_Lung_alt]=Generation_Gimme_alt(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I); 
+                [Gimme_model_H_Lung_alt, Gimme_model_I_Lung_alt]=generate_GIMME(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I); 
                 Gimme_model_H_Lung_alt.rules(214)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_Lung_alt.rxns{214})));
                 writeCbModel(Gimme_model_H_Lung_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_Lung_alt, 'format','mat', 'fileName', file_name_Infected)
 
             case'IMAT'
-                [IMAT_model_H_Lung_alt, iMAT_model_I_Lung_alt]=Generation_iMAT_alt(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_Lung_alt, iMAT_model_I_Lung_alt]=generate_iMAT(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I);
                 writeCbModel(IMAT_model_H_Lung_alt, 'format','mat', 'fileName', file_name_healthy)
                 iMAT_model_I_Lung_alt.rules(3121)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_Lung_alt.rxns{3121})));
                 writeCbModel(iMAT_model_I_Lung_alt, 'format','mat', 'fileName', file_name_Infected)
 
             case'tINIT'
-                [tINIT_model_H_Lung,tINIT_model_I_Lung]=tINIT_generation(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [tINIT_model_H_Lung,tINIT_model_I_Lung]=generate_tINIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 tINIT_model_H_Lung=ravenCobraWrapper(tINIT_model_H_Lung)
                 tINIT_model_I_Lung=rmfield(tINIT_model_I_Lung,'rules')
                 tINIT_model_I_Lung=ravenCobraWrapper(tINIT_model_I_Lung)
@@ -353,7 +353,7 @@ switch (Database)
                 writeCbModel(tINIT_model_I_Lung, 'format','mat', 'fileName', file_name_Infected)
 
             case'INIT'
-                [INIT_model_H_Lung,INIT_model_I_Lung]=INIT_generation_good(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [INIT_model_H_Lung,INIT_model_I_Lung]=generate_INIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 INIT_model_H_Lung=ravenCobraWrapper(INIT_model_H_Lung)
                 writeCbModel(INIT_model_H_Lung, 'format','mat', 'fileName', 'INIT_model_H_Lung_alt.mat')
                 INIT_model_I_Lung=rmfield(INIT_model_I_Lung,'rules')
@@ -365,7 +365,7 @@ switch (Database)
                 model_choice='Gimme'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [Gimme_model_H_Lung_alt, Gimme_model_I_Lung_alt]=Generation_Gimme_alt(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I); 
+                [Gimme_model_H_Lung_alt, Gimme_model_I_Lung_alt]=generate_GIMME(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I); 
                 Gimme_model_H_Lung_alt.rules(214)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_Lung_alt.rxns{214})));
                 writeCbModel(Gimme_model_H_Lung_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_Lung_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -374,7 +374,7 @@ switch (Database)
                 model_choice='IMAT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [IMAT_model_H_Lung_alt, iMAT_model_I_Lung_alt]=Generation_iMAT_alt(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_Lung_alt, iMAT_model_I_Lung_alt]=generate_iMAT(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I);
                 writeCbModel(IMAT_model_H_Lung_alt, 'format','mat', 'fileName', file_name_healthy)
                 iMAT_model_I_Lung_alt.rules(3121)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_Lung_alt.rxns{3121})));
                 writeCbModel(iMAT_model_I_Lung_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -383,7 +383,7 @@ switch (Database)
                 model_choice='tINIT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [tINIT_model_H_Lung,tINIT_model_I_Lung]=tINIT_generation(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [tINIT_model_H_Lung,tINIT_model_I_Lung]=generate_tINIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 tINIT_model_H_Lung=ravenCobraWrapper(tINIT_model_H_Lung)
                 tINIT_model_I_Lung=rmfield(tINIT_model_I_Lung,'rules')
                 tINIT_model_I_Lung=ravenCobraWrapper(tINIT_model_I_Lung)
@@ -394,7 +394,7 @@ switch (Database)
                 model_choice='INIT'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');    
-                [INIT_model_H_Lung,INIT_model_I_Lung]=INIT_generation_good(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [INIT_model_H_Lung,INIT_model_I_Lung]=generate_INIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 INIT_model_H_Lung=ravenCobraWrapper(INIT_model_H_Lung)
                 writeCbModel(INIT_model_H_Lung, 'format','mat', 'fileName', 'INIT_model_H_Lung_alt.mat')
                 INIT_model_I_Lung=rmfield(INIT_model_I_Lung,'rules')
@@ -429,19 +429,19 @@ switch (Database)
         file_name_Infected=strcat(model_choice,'_model_I_',Database,'_alt.mat');  
         switch(model_choice)
             case'Gimme'
-                [Gimme_model_H_293T_alt, Gimme_model_I_293T_alt]=Generation_Gimme_alt(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_293T_alt, Gimme_model_I_293T_alt]=generate_GIMME(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
                 Gimme_model_H_293T_alt.rules(221)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_293T_alt.rxns{221})));
                 writeCbModel(Gimme_model_H_293T_alt, 'format','mat', 'fileName', 'Gimme_model_H_293T_alt.mat')
                 writeCbModel(Gimme_model_I_293T_alt, 'format','mat', 'fileName', 'Gimme_model_I_293T_alt.mat')
 
             case'IMAT'
-                [IMAT_model_H_293T_alt, iMAT_model_I_293T_alt]=Generation_iMAT_alt(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_293T_alt, iMAT_model_I_293T_alt]=generate_iMAT(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
                 iMAT_model_I_293T_alt.rules(2854)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_293T_alt.rxns{2854})));
                 writeCbModel(iMAT_model_I_293T_alt, 'format','mat', 'fileName', 'iMAT_model_I_293T_alt.mat')
                 writeCbModel(IMAT_model_H_293T_alt, 'format','mat', 'fileName', 'iMAT_model_H_293T_alt.mat')
 
             case'tINIT'
-                [tINIT_model_H_293T,tINIT_model_I_293T]=tINIT_generation(T_Healthy_mean_INIT,T_Infected_mean_INIT)
+                [tINIT_model_H_293T,tINIT_model_I_293T]=generate_tINIT(T_Healthy_mean_INIT,T_Infected_mean_INIT)
                 tINIT_model_H_293T=ravenCobraWrapper(tINIT_model_H_293T)
                 tINIT_model_I_293T=rmfield(tINIT_model_I_293T,'rules')
                 tINIT_model_I_293T=ravenCobraWrapper(tINIT_model_I_293T)
@@ -449,7 +449,7 @@ switch (Database)
                 writeCbModel(tINIT_model_I_293T, 'format','mat', 'fileName', 'tINIT_model_I_293T_alt.mat')
 
             case'INIT'
-                [INIT_model_H_293T,INIT_model_I_293T]=INIT_generation_good(T_Healthy_mean_INIT,T_Infected_mean_INIT)
+                [INIT_model_H_293T,INIT_model_I_293T]=generate_INIT(T_Healthy_mean_INIT,T_Infected_mean_INIT)
                 INIT_model_H_293T=ravenCobraWrapper(INIT_model_H_293T)
                 INIT_model_I_293T=rmfield(INIT_model_I_293T,'rules')
                 INIT_model_I_293T=ravenCobraWrapper(INIT_model_I_293T)
@@ -458,19 +458,19 @@ switch (Database)
                 
             case'All'
                 %Gimme
-                [Gimme_model_H_293T_alt, Gimme_model_I_293T_alt]=Generation_Gimme_alt(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_293T_alt, Gimme_model_I_293T_alt]=generate_GIMME(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
                 Gimme_model_H_293T_alt.rules(221)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_293T_alt.rxns{221})));
                 writeCbModel(Gimme_model_H_293T_alt, 'format','mat', 'fileName', 'Gimme_model_H_293T_alt.mat')
                 writeCbModel(Gimme_model_I_293T_alt, 'format','mat', 'fileName', 'Gimme_model_I_293T_alt.mat')
                 
                 %IMAT
-                [IMAT_model_H_293T_alt, iMAT_model_I_293T_alt]=Generation_iMAT_alt(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_293T_alt, iMAT_model_I_293T_alt]=generate_iMAT(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
                 iMAT_model_I_293T_alt.rules(2854)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_293T_alt.rxns{2854})));
                 writeCbModel(iMAT_model_I_293T_alt, 'format','mat', 'fileName', 'iMAT_model_I_293T_alt.mat')
                 writeCbModel(IMAT_model_H_293T_alt, 'format','mat', 'fileName', 'iMAT_model_H_293T_alt.mat')
                 
                 %tINIT
-                [tINIT_model_H_293T,tINIT_model_I_293T]=tINIT_generation(T_Healthy_mean_INIT,T_Infected_mean_INIT)
+                [tINIT_model_H_293T,tINIT_model_I_293T]=generate_tINIT(T_Healthy_mean_INIT,T_Infected_mean_INIT)
                 tINIT_model_H_293T=ravenCobraWrapper(tINIT_model_H_293T)
                 tINIT_model_I_293T=rmfield(tINIT_model_I_293T,'rules')
                 tINIT_model_I_293T=ravenCobraWrapper(tINIT_model_I_293T)
@@ -478,7 +478,7 @@ switch (Database)
                 writeCbModel(tINIT_model_I_293T, 'format','mat', 'fileName', 'tINIT_model_I_293T_alt.mat')
                 
                 %INIT
-                [INIT_model_H_293T,INIT_model_I_293T]=INIT_generation_good(T_Healthy_mean_INIT,T_Infected_mean_INIT)
+                [INIT_model_H_293T,INIT_model_I_293T]=generate_INIT(T_Healthy_mean_INIT,T_Infected_mean_INIT)
                 INIT_model_H_293T=ravenCobraWrapper(INIT_model_H_293T)
                 INIT_model_I_293T=rmfield(INIT_model_I_293T,'rules')
                 INIT_model_I_293T=ravenCobraWrapper(INIT_model_I_293T)
@@ -584,7 +584,7 @@ switch (Database)
                 Database2='NHBE'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');    
-                [Gimme_model_H_NHBE_alt, Gimme_model_I_NHBE_alt]=Generation_Gimme_alt(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_NHBE_alt, Gimme_model_I_NHBE_alt]=generate_GIMME(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
                 Gimme_model_H_NHBE_alt.rules(204)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_NHBE_alt.rxns{204})));
                 writeCbModel(Gimme_model_H_NHBE_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_NHBE_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -593,7 +593,7 @@ switch (Database)
                 Database2='A549'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');    
-                [Gimme_model_H_A549_alt, Gimme_model_I_A549_alt]=Generation_Gimme_alt(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);               
+                [Gimme_model_H_A549_alt, Gimme_model_I_A549_alt]=generate_GIMME(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);               
                 Gimme_model_H_A549_alt.rules(206)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_A549_alt.rxns{206})));
                 writeCbModel(Gimme_model_H_A549_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_A549_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -602,7 +602,7 @@ switch (Database)
                 Database2='CALU'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');
-                [Gimme_model_H_CALU_alt, Gimme_model_I_CALU_alt]=Generation_Gimme_alt(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_CALU_alt, Gimme_model_I_CALU_alt]=generate_GIMME(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
                 Gimme_model_H_CALU_alt.rules(206)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_CALU_alt.rxns{206})));
                 writeCbModel(Gimme_model_H_CALU_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_CALU_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -611,7 +611,7 @@ switch (Database)
                 Database2='Lung'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');
-                [Gimme_model_H_Lung_alt, Gimme_model_I_Lung_alt]=Generation_Gimme_alt(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I); 
+                [Gimme_model_H_Lung_alt, Gimme_model_I_Lung_alt]=generate_GIMME(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I); 
                 Gimme_model_H_Lung_alt.rules(214)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_Lung_alt.rxns{214})));
                 writeCbModel(Gimme_model_H_Lung_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_Lung_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -620,7 +620,7 @@ switch (Database)
                 Database2='293T'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');
-                [Gimme_model_H_293T_alt, Gimme_model_I_293T_alt]=Generation_Gimme_alt(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_293T_alt, Gimme_model_I_293T_alt]=generate_GIMME(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
                 Gimme_model_H_293T_alt.rules(221)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_293T_alt.rxns{221})));
                 writeCbModel(Gimme_model_H_293T_alt, 'format','mat', 'fileName', 'Gimme_model_H_293T_alt.mat')
                 writeCbModel(Gimme_model_I_293T_alt, 'format','mat', 'fileName', 'Gimme_model_I_293T_alt.mat')
@@ -630,7 +630,7 @@ switch (Database)
                 Database2='NHBE'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [iMAT_model_H_NHBE_alt, iMAT_model_I_NHBE_alt]=Generation_iMAT_alt(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
+                [iMAT_model_H_NHBE_alt, iMAT_model_I_NHBE_alt]=generate_iMAT(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
                 iMAT_model_I_NHBE_alt.rules(2872)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),iMAT_model_I_NHBE_alt.rxns{2872})));   
                 writeCbModel(iMAT_model_H_NHBE_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(iMAT_model_I_NHBE_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -639,7 +639,7 @@ switch (Database)
                 Database2='A549'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [IMAT_model_H_A549_alt, iMAT_model_I_A549_alt]=Generation_iMAT_alt(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_A549_alt, iMAT_model_I_A549_alt]=generate_iMAT(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);
                 iMAT_model_I_A549_alt.rules(2889)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_A549_alt.rxns{2889})));
                 writeCbModel(IMAT_model_H_A549_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(iMAT_model_I_A549_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -648,7 +648,7 @@ switch (Database)
                 Database2='CALU'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [IMAT_model_H_CALU_alt, iMAT_model_I_CALU_alt]=Generation_iMAT_alt(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_CALU_alt, iMAT_model_I_CALU_alt]=generate_iMAT(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
                 writeCbModel(IMAT_model_H_CALU_alt, 'format','mat', 'fileName', file_name_healthy)
                 iMAT_model_I_CALU_alt.rules(2822)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_CALU_alt.rxns{2822})));
                 writeCbModel(iMAT_model_I_CALU_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -657,7 +657,7 @@ switch (Database)
                 Database2='Lung'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [IMAT_model_H_Lung_alt, iMAT_model_I_Lung_alt]=Generation_iMAT_alt(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_Lung_alt, iMAT_model_I_Lung_alt]=generate_iMAT(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I);
                 writeCbModel(IMAT_model_H_Lung_alt, 'format','mat', 'fileName', file_name_healthy)
                 iMAT_model_I_Lung_alt.rules(3121)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_Lung_alt.rxns{3121})));
                 writeCbModel(iMAT_model_I_Lung_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -666,7 +666,7 @@ switch (Database)
                 Database2='293T'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [IMAT_model_H_293T_alt, iMAT_model_I_293T_alt]=Generation_iMAT_alt(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_293T_alt, iMAT_model_I_293T_alt]=generate_iMAT(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
                 iMAT_model_I_293T_alt.rules(2854)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_293T_alt.rxns{2854})));
                 writeCbModel(iMAT_model_I_293T_alt, 'format','mat', 'fileName', 'iMAT_model_I_293T_alt.mat')
                 writeCbModel(IMAT_model_H_293T_alt, 'format','mat', 'fileName', 'iMAT_model_H_293T_alt.mat')
@@ -676,7 +676,7 @@ switch (Database)
                 Database2='NHBE'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [tINIT_model_H_NHBE,tINIT_model_I_NHBE]=tINIT_generation(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
+                [tINIT_model_H_NHBE,tINIT_model_I_NHBE]=generate_tINIT(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
                 tINIT_model_H_NHBE=ravenCobraWrapper(tINIT_model_H_NHBE);
                 tINIT_model_I_NHBE=rmfield(tINIT_model_I_NHBE,'rules');
                 tINIT_model_I_NHBE=ravenCobraWrapper(tINIT_model_I_NHBE);
@@ -687,7 +687,7 @@ switch (Database)
                 Database2='A549'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [tINIT_model_H_A549,tINIT_model_I_A549]=tINIT_generation(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
+                [tINIT_model_H_A549,tINIT_model_I_A549]=generate_tINIT(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
                 tINIT_model_I_A549=rmfield(tINIT_model_I_A549,'rules')
                 tINIT_model_I_A549=ravenCobraWrapper(tINIT_model_I_A549)
                 writeCbModel(tINIT_model_H_A549, 'format','mat', 'fileName', file_name_healthy)
@@ -697,7 +697,7 @@ switch (Database)
                 Database2='CALU'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [tINIT_model_H_CALU,tINIT_model_I_CALU]=tINIT_generation(CALU_Healthy_mean_INIT,CALU_Infected_mean_INIT)
+                [tINIT_model_H_CALU,tINIT_model_I_CALU]=generate_tINIT(CALU_Healthy_mean_INIT,CALU_Infected_mean_INIT)
                 tINIT_model_H_CALU=ravenCobraWrapper(tINIT_model_H_CALU)
                 tINIT_model_I_CALU=rmfield(tINIT_model_I_CALU,'rules')
                 tINIT_model_I_CALU=ravenCobraWrapper(tINIT_model_I_CALU)
@@ -708,7 +708,7 @@ switch (Database)
                 Database2='Lung'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [tINIT_model_H_Lung,tINIT_model_I_Lung]=tINIT_generation(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [tINIT_model_H_Lung,tINIT_model_I_Lung]=generate_tINIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 tINIT_model_H_Lung=ravenCobraWrapper(tINIT_model_H_Lung)
                 tINIT_model_I_Lung=rmfield(tINIT_model_I_Lung,'rules')
                 tINIT_model_I_Lung=ravenCobraWrapper(tINIT_model_I_Lung)
@@ -716,7 +716,7 @@ switch (Database)
                 writeCbModel(tINIT_model_I_Lung, 'format','mat', 'fileName', file_name_Infected)
 
                 %293T
-                [tINIT_model_H_293T,tINIT_model_I_293T]=tINIT_generation(T_Healthy_mean_INIT,T_Infected_mean_INIT)
+                [tINIT_model_H_293T,tINIT_model_I_293T]=generate_tINIT(T_Healthy_mean_INIT,T_Infected_mean_INIT)
                 tINIT_model_H_293T=ravenCobraWrapper(tINIT_model_H_293T)
                 tINIT_model_I_293T=rmfield(tINIT_model_I_293T,'rules')
                 tINIT_model_I_293T=ravenCobraWrapper(tINIT_model_I_293T)
@@ -729,7 +729,7 @@ switch (Database)
                 Database2='NHBE'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [INIT_model_H_NHBE,INIT_model_I_NHBE]=INIT_generation_good(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
+                [INIT_model_H_NHBE,INIT_model_I_NHBE]=generate_INIT(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
                 INIT_model_H_NHBE=ravenCobraWrapper(INIT_model_H_NHBE);
                 INIT_model_I_NHBE=rmfield(INIT_model_I_NHBE,'rules');
                 INIT_model_I_NHBE=ravenCobraWrapper(INIT_model_I_NHBE);
@@ -740,7 +740,7 @@ switch (Database)
                 Database2='A549'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [INIT_model_H_A549,INIT_model_I_A549]=INIT_generation_good(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
+                [INIT_model_H_A549,INIT_model_I_A549]=generate_INIT(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
                 INIT_model_H_A549=ravenCobraWrapper(INIT_model_H_A549)
                 writeCbModel(INIT_model_H_A549, 'format','mat', 'fileName', 'INIT_model_H_A549_alt.mat')
                 INIT_model_I_A549=rmfield(INIT_model_I_A549,'rules')
@@ -751,7 +751,7 @@ switch (Database)
                 Database2='CALI'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [INIT_model_H_Lung,INIT_model_I_Lung]=INIT_generation_good(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [INIT_model_H_Lung,INIT_model_I_Lung]=generate_INIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 INIT_model_H_CALU=ravenCobraWrapper(INIT_model_H_CALU)
                 INIT_model_I_CALU=rmfield(INIT_model_I_CALU,'rules')
                 INIT_model_I_CALU=ravenCobraWrapper(INIT_model_I_CALU)
@@ -759,7 +759,7 @@ switch (Database)
                 writeCbModel(INIT_model_I_CALU, 'format','mat', 'fileName', file_name_Infected)
                 
                 %Lung
-                [INIT_model_H_Lung,INIT_model_I_Lung]=INIT_generation_good(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [INIT_model_H_Lung,INIT_model_I_Lung]=generate_INIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 INIT_model_H_Lung=ravenCobraWrapper(INIT_model_H_Lung)
                 writeCbModel(INIT_model_H_Lung, 'format','mat', 'fileName', 'INIT_model_H_Lung_alt.mat')
                 INIT_model_I_Lung=rmfield(INIT_model_I_Lung,'rules')
@@ -767,7 +767,7 @@ switch (Database)
                 writeCbModel(INIT_model_I_Lung, 'format','mat', 'fileName', 'INIT_model_I_Lung_alt.mat')
                 
                %293T
-               [INIT_model_H_293T,INIT_model_I_293T]=INIT_generation_good(T_Healthy_mean_INIT,T_Infected_mean_INIT)
+               [INIT_model_H_293T,INIT_model_I_293T]=generate_INIT(T_Healthy_mean_INIT,T_Infected_mean_INIT)
                INIT_model_H_293T=ravenCobraWrapper(INIT_model_H_293T)
                INIT_model_I_293T=rmfield(INIT_model_I_293T,'rules')
                INIT_model_I_293T=ravenCobraWrapper(INIT_model_I_293T)
@@ -780,7 +780,7 @@ switch (Database)
                 Database2='NHBE'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');    
-                [Gimme_model_H_NHBE_alt, Gimme_model_I_NHBE_alt]=Generation_Gimme_alt(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_NHBE_alt, Gimme_model_I_NHBE_alt]=generate_GIMME(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
                 Gimme_model_H_NHBE_alt.rules(204)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_NHBE_alt.rxns{204})));
                 writeCbModel(Gimme_model_H_NHBE_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_NHBE_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -789,7 +789,7 @@ switch (Database)
                 Database2='A549'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');    
-                [Gimme_model_H_A549_alt, Gimme_model_I_A549_alt]=Generation_Gimme_alt(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);               
+                [Gimme_model_H_A549_alt, Gimme_model_I_A549_alt]=generate_GIMME(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);               
                 Gimme_model_H_A549_alt.rules(206)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_A549_alt.rxns{206})));
                 writeCbModel(Gimme_model_H_A549_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_A549_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -798,7 +798,7 @@ switch (Database)
                 Database2='CALU'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');
-                [Gimme_model_H_CALU_alt, Gimme_model_I_CALU_alt]=Generation_Gimme_alt(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_CALU_alt, Gimme_model_I_CALU_alt]=generate_GIMME(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
                 Gimme_model_H_CALU_alt.rules(206)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_CALU_alt.rxns{206})));
                 writeCbModel(Gimme_model_H_CALU_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_CALU_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -807,7 +807,7 @@ switch (Database)
                 Database2='Lung'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');
-                [Gimme_model_H_Lung_alt, Gimme_model_I_Lung_alt]=Generation_Gimme_alt(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I); 
+                [Gimme_model_H_Lung_alt, Gimme_model_I_Lung_alt]=generate_GIMME(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I); 
                 Gimme_model_H_Lung_alt.rules(214)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_Lung_alt.rxns{214})));
                 writeCbModel(Gimme_model_H_Lung_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(Gimme_model_I_Lung_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -816,7 +816,7 @@ switch (Database)
                 Database2='293T'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');
-                [Gimme_model_H_293T_alt, Gimme_model_I_293T_alt]=Generation_Gimme_alt(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
+                [Gimme_model_H_293T_alt, Gimme_model_I_293T_alt]=generate_GIMME(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
                 Gimme_model_H_293T_alt.rules(221)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),Gimme_model_H_293T_alt.rxns{221})));
                 writeCbModel(Gimme_model_H_293T_alt, 'format','mat', 'fileName', 'Gimme_model_H_293T_alt.mat')
                 writeCbModel(Gimme_model_I_293T_alt, 'format','mat', 'fileName', 'Gimme_model_I_293T_alt.mat')
@@ -826,7 +826,7 @@ switch (Database)
                 Database2='NHBE'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [iMAT_model_H_NHBE_alt, iMAT_model_I_NHBE_alt]=Generation_iMAT_alt(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
+                [iMAT_model_H_NHBE_alt, iMAT_model_I_NHBE_alt]=generate_iMAT(model_Healthy,NHBE_Healthy_mean,essentialTasks_H,Cobra_infected_model,NHBE_Infected_mean,essentialTasks_I);
                 iMAT_model_I_NHBE_alt.rules(2872)=model_Healthy.rules(find(ismember(model_Healthy.rxns(:,1),iMAT_model_I_NHBE_alt.rxns{2872})));   
                 writeCbModel(iMAT_model_H_NHBE_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(iMAT_model_I_NHBE_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -835,7 +835,7 @@ switch (Database)
                 Database2='A549'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [IMAT_model_H_A549_alt, iMAT_model_I_A549_alt]=Generation_iMAT_alt(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_A549_alt, iMAT_model_I_A549_alt]=generate_iMAT(model_Healthy,A549_Healthy_mean,essentialTasks_H,Cobra_infected_model,A549_Infected_mean,essentialTasks_I);
                 iMAT_model_I_A549_alt.rules(2889)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_A549_alt.rxns{2889})));
                 writeCbModel(IMAT_model_H_A549_alt, 'format','mat', 'fileName', file_name_healthy)
                 writeCbModel(iMAT_model_I_A549_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -844,7 +844,7 @@ switch (Database)
                 Database2='CALU'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [IMAT_model_H_CALU_alt, iMAT_model_I_CALU_alt]=Generation_iMAT_alt(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_CALU_alt, iMAT_model_I_CALU_alt]=generate_iMAT(model_Healthy,CALU_Healthy_mean,essentialTasks_H,Cobra_infected_model,CALU_Infected_mean,essentialTasks_I);
                 writeCbModel(IMAT_model_H_CALU_alt, 'format','mat', 'fileName', file_name_healthy)
                 iMAT_model_I_CALU_alt.rules(2822)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_CALU_alt.rxns{2822})));
                 writeCbModel(iMAT_model_I_CALU_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -853,7 +853,7 @@ switch (Database)
                 Database2='Lung'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [IMAT_model_H_Lung_alt, iMAT_model_I_Lung_alt]=Generation_iMAT_alt(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_Lung_alt, iMAT_model_I_Lung_alt]=generate_iMAT(model_Healthy,Lung_Healthy_mean,essentialTasks_H,Cobra_infected_model,Lung_Infected_mean,essentialTasks_I);
                 writeCbModel(IMAT_model_H_Lung_alt, 'format','mat', 'fileName', file_name_healthy)
                 iMAT_model_I_Lung_alt.rules(3121)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_Lung_alt.rxns{3121})));
                 writeCbModel(iMAT_model_I_Lung_alt, 'format','mat', 'fileName', file_name_Infected)
@@ -862,7 +862,7 @@ switch (Database)
                 Database2='293T'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [IMAT_model_H_293T_alt, iMAT_model_I_293T_alt]=Generation_iMAT_alt(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
+                [IMAT_model_H_293T_alt, iMAT_model_I_293T_alt]=generate_iMAT(model_Healthy,T_Healthy_mean,essentialTasks_H,Cobra_infected_model,T_Infected_mean,essentialTasks_I);
                 iMAT_model_I_293T_alt.rules(2854)=Cobra_infected_model.rules(find(ismember(Cobra_infected_model.rxns(:,1),iMAT_model_I_293T_alt.rxns{2854})));
                 writeCbModel(iMAT_model_I_293T_alt, 'format','mat', 'fileName', 'iMAT_model_I_293T_alt.mat')
                 writeCbModel(IMAT_model_H_293T_alt, 'format','mat', 'fileName', 'iMAT_model_H_293T_alt.mat')
@@ -872,7 +872,7 @@ switch (Database)
                 Database2='NHBE'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [tINIT_model_H_NHBE,tINIT_model_I_NHBE]=tINIT_generation(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
+                [tINIT_model_H_NHBE,tINIT_model_I_NHBE]=generate_tINIT(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
                 tINIT_model_H_NHBE=ravenCobraWrapper(tINIT_model_H_NHBE);
                 tINIT_model_I_NHBE=rmfield(tINIT_model_I_NHBE,'rules');
                 tINIT_model_I_NHBE=ravenCobraWrapper(tINIT_model_I_NHBE);
@@ -883,7 +883,7 @@ switch (Database)
                 Database2='A549'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [tINIT_model_H_A549,tINIT_model_I_A549]=tINIT_generation(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
+                [tINIT_model_H_A549,tINIT_model_I_A549]=generate_tINIT(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
                 tINIT_model_I_A549=rmfield(tINIT_model_I_A549,'rules')
                 tINIT_model_I_A549=ravenCobraWrapper(tINIT_model_I_A549)
                 writeCbModel(tINIT_model_H_A549, 'format','mat', 'fileName', file_name_healthy)
@@ -893,7 +893,7 @@ switch (Database)
                 Database2='CALU'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [tINIT_model_H_CALU,tINIT_model_I_CALU]=tINIT_generation(CALU_Healthy_mean_INIT,CALU_Infected_mean_INIT)
+                [tINIT_model_H_CALU,tINIT_model_I_CALU]=generate_tINIT(CALU_Healthy_mean_INIT,CALU_Infected_mean_INIT)
                 tINIT_model_H_CALU=ravenCobraWrapper(tINIT_model_H_CALU)
                 tINIT_model_I_CALU=rmfield(tINIT_model_I_CALU,'rules')
                 tINIT_model_I_CALU=ravenCobraWrapper(tINIT_model_I_CALU)
@@ -904,7 +904,7 @@ switch (Database)
                 Database2='Lung'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [tINIT_model_H_Lung,tINIT_model_I_Lung]=tINIT_generation(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [tINIT_model_H_Lung,tINIT_model_I_Lung]=generate_tINIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 tINIT_model_H_Lung=ravenCobraWrapper(tINIT_model_H_Lung)
                 tINIT_model_I_Lung=rmfield(tINIT_model_I_Lung,'rules')
                 tINIT_model_I_Lung=ravenCobraWrapper(tINIT_model_I_Lung)
@@ -912,7 +912,7 @@ switch (Database)
                 writeCbModel(tINIT_model_I_Lung, 'format','mat', 'fileName', file_name_Infected)
 
                 %293T
-                [tINIT_model_H_293T,tINIT_model_I_293T]=tINIT_generation(T_Healthy_mean_INIT,T_Infected_mean_INIT)
+                [tINIT_model_H_293T,tINIT_model_I_293T]=generate_tINIT(T_Healthy_mean_INIT,T_Infected_mean_INIT)
                 tINIT_model_H_293T=ravenCobraWrapper(tINIT_model_H_293T)
                 tINIT_model_I_293T=rmfield(tINIT_model_I_293T,'rules')
                 tINIT_model_I_293T=ravenCobraWrapper(tINIT_model_I_293T)
@@ -925,7 +925,7 @@ switch (Database)
                 Database2='NHBE'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [INIT_model_H_NHBE,INIT_model_I_NHBE]=INIT_generation_good(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
+                [INIT_model_H_NHBE,INIT_model_I_NHBE]=generate_INIT(NHBE_Healthy_mean_INIT,NHBE_Infected_mean_INIT)
                 INIT_model_H_NHBE=ravenCobraWrapper(INIT_model_H_NHBE);
                 INIT_model_I_NHBE=rmfield(INIT_model_I_NHBE,'rules');
                 INIT_model_I_NHBE=ravenCobraWrapper(INIT_model_I_NHBE);
@@ -936,7 +936,7 @@ switch (Database)
                 Database2='A549'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [INIT_model_H_A549,INIT_model_I_A549]=INIT_generation_good(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
+                [INIT_model_H_A549,INIT_model_I_A549]=generate_INIT(A549_Healthy_mean_INIT,A549_Infected_mean_INIT)
                 INIT_model_H_A549=ravenCobraWrapper(INIT_model_H_A549)
                 writeCbModel(INIT_model_H_A549, 'format','mat', 'fileName', 'INIT_model_H_A549_alt.mat')
                 INIT_model_I_A549=rmfield(INIT_model_I_A549,'rules')
@@ -947,7 +947,7 @@ switch (Database)
                 Database2='CALI'
                 file_name_healthy=strcat(model_choice,'_model_H_',Database2,'_alt.mat');
                 file_name_Infected=strcat(model_choice,'_model_I_',Database2,'_alt.mat');  
-                [INIT_model_H_Lung,INIT_model_I_Lung]=INIT_generation_good(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [INIT_model_H_Lung,INIT_model_I_Lung]=generate_INIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 INIT_model_H_CALU=ravenCobraWrapper(INIT_model_H_CALU)
                 INIT_model_I_CALU=rmfield(INIT_model_I_CALU,'rules')
                 INIT_model_I_CALU=ravenCobraWrapper(INIT_model_I_CALU)
@@ -955,7 +955,7 @@ switch (Database)
                 writeCbModel(INIT_model_I_CALU, 'format','mat', 'fileName', file_name_Infected)
                 
                 %Lung
-                [INIT_model_H_Lung,INIT_model_I_Lung]=INIT_generation_good(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
+                [INIT_model_H_Lung,INIT_model_I_Lung]=generate_INIT(Lung_Healthy_mean_INIT,Lung_Infected_mean_INIT)
                 INIT_model_H_Lung=ravenCobraWrapper(INIT_model_H_Lung)
                 writeCbModel(INIT_model_H_Lung, 'format','mat', 'fileName', 'INIT_model_H_Lung_alt.mat')
                 INIT_model_I_Lung=rmfield(INIT_model_I_Lung,'rules')
@@ -963,7 +963,7 @@ switch (Database)
                 writeCbModel(INIT_model_I_Lung, 'format','mat', 'fileName', 'INIT_model_I_Lung_alt.mat')
                 
                %293T
-               [INIT_model_H_293T,INIT_model_I_293T]=INIT_generation_good(T_Healthy_mean_INIT,T_Infected_mean_INIT)
+               [INIT_model_H_293T,INIT_model_I_293T]=generate_INIT(T_Healthy_mean_INIT,T_Infected_mean_INIT)
                INIT_model_H_293T=ravenCobraWrapper(INIT_model_H_293T)
                INIT_model_I_293T=rmfield(INIT_model_I_293T,'rules')
                INIT_model_I_293T=ravenCobraWrapper(INIT_model_I_293T)
