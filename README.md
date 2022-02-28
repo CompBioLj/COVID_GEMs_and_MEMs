@@ -26,12 +26,12 @@ The analysis of extracted models and the visualisation of the obtained results w
 * [`model_statistics_sampling.ipynb`](model_statistics_sampling.ipynb): Similar as [`model_statistics.ipynb`](model_statistics.ipynb) but performs the analysis on the results of flux sampling.
 * [`reactions_enrichment.ipynb`](reactions_enrichment.ipynb): Compares pairs (healthy, infected) on a reaction level based on flux samples. Calculates p-values, fold-changes and enrichment. It also extracts active reactions per pairs (reactions that are active - nonzero) in at least one model within a pair.
 * [`reactions_subsystems_enrichment.ipynb`](reactions_subsystems_enrichment.ipynb): Produces an XLSX file with enriched reactions per subsystem for all models.
-* [`subsystems_enrichment.ipynb`](subsystems_enrichment.ipynb): Performs subsystems enrichment analysis based on the hypergeometric test.
-* [`subsystems_enrichment_plot.ipynb`](subsystems_enrichment_plot.ipynb): plots the results of the enrichment analysis.
+* [`subsystems_enrichment.ipynb`](subsystems_enrichment.ipynb): Performs subsystems enrichment analysis based on the hypergeometric test performed on the encriched metabolic reactions.
+* [`subsystems_enrichment_plot.ipynb`](subsystems_enrichment_plot.ipynb): plots the results of the metabolic substystems enrichment analysis.
 
 ## Results
 * [`results_basic`](results_basic): results of the basic statistical analysis.
-* [`results_PCA`](results_PCA): results of the PCA performed on the obtained reactions.
-* [`results_PCA_sampling`](results_PCA_sampling): results of the PCA performed on the reactions with nonzero flux values in flux samples.
+* [`results_PCA`](results_PCA): results of the PCA performed on the preserved reactions after model extraction process.
+* [`results_PCA_sampling`](results_PCA_sampling): results of the PCA performed on the reactions with nonzero flux values after flux sampling on the extracted models.
 * [`results_enrichment`](results_enrichment): results of the enrichment analyses.
 * [`results_enrichment/reactions_subsystems.xlsx`](results_enrichment/reactions_subsystems.xlsx): full results of the enrichment analysis (for all metabolic reactions).
