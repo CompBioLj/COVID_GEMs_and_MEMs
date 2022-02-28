@@ -1,6 +1,6 @@
-# COVID: GEMs and MEMs
+# Genome-scale metabolic modelling of COVID-19
 
-This repository is supplementing the paper **Genome-scale metabolic modelling of COVID-19: Integration of omics data to generate and analyse COVID-19 specific genome-scale metabolic models**. 
+This repository is supplementing the paper **Integration of omics data to generate and analyse COVID-19 specific genome-scale metabolic models**. 
 
 
 ## Data preprocessing (Shell)
@@ -12,7 +12,7 @@ This repository is supplementing the paper **Genome-scale metabolic modelling of
 * [`Lung.sh`](/Code/Linux/Lung.sh): Downloads the Lung RNA-seq fastq files and generate the quantification with kallisto. 
 
 ## Model extraction (Matlab)
-* [`Main.m`](/Code/Matlab/Main.m): A script that allows the user to choose a dataset and a MEM used in the extraction process.
+* [`Main.m`](/Code/Matlab/Main.m): A script that allows the user to choose a dataset and a model extraction method for the extraction process.
 * [`generate_iMAT.m`](/Code/Matlab/generate_iMAT.m): A function that generates a healthy and an infected model with the iMAT algorithm.
 * [`generate_GIMME.m`](/Code/Matlab/generate_GIMME.m): A function that generates a healthy and an infected model with the GIMME algorithm.
 * [`generate_INIT.m`](/Code/Matlab/generate_INIT.m): A function that generates a healthy and an infected model with the GIMME algorithm.
@@ -22,7 +22,7 @@ This repository is supplementing the paper **Genome-scale metabolic modelling of
 The analysis of extracted models and the visualisation of the obtained results were performed in Python. The main files are as follows:
 * [`model_PCA.ipynb`](model_PCA.ipynb): Performs the PCA analysis on the models obtained with different MEMs.
 * [`model_PCA_sampling.ipynb`](model_PCA_sampling.ipynb): Performs the PCA analysis on the model fluxes (the reactions with at least one flux sample different than zero are kept) obtained with different MEMs.
-* [`model_statistics.ipynb`](model_statistics.ipynb): Performs the basic anaylses of the extracted models (model sizes, Jaccard index calculation, reaction specificity analysis).
+* [`model_statistics.ipynb`](model_statistics.ipynb): Performs the basic analyses of the extracted models (model sizes, Jaccard index calculation, reaction specificity analysis).
 * [`model_statistics_sampling.ipynb`](model_statistics_sampling.ipynb): Similar as [`model_statistics.ipynb`](model_statistics.ipynb) but performs the analysis on the results of flux sampling.
 * [`reactions_enrichment.ipynb`](reactions_enrichment.ipynb): Compares pairs (healthy, infected) on a reaction level based on flux samples. Calculates p-values, fold-changes and enrichment. It also extracts active reactions per pairs (reactions that are active - nonzero) in at least one model within a pair.
 * [`reactions_subsystems_enrichment.ipynb`](reactions_subsystems_enrichment.ipynb): Produces an XLSX file with enriched reactions per subsystem for all models.
