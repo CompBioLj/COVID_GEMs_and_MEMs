@@ -1,9 +1,9 @@
 # Genome-scale metabolic modelling of COVID-19
 
 This repository is supplementing the paper **Integration of omics data to generate and analyse COVID-19 specific genome-scale metabolic models**. The main parts of the code in the repository are
-* [Data preprocessing](#data-preprocessing-(bash)): downloading and preprocessing the transcriptomics data used as an input to model extraction methods in the next step.
-* [Model extraction](#model-extraction-(matlab)): the integration of the transcriptomics data with the reference model to obtain context-specific models.
-* [Analysis and visualisation](#analysis-and-visualisation-(pyhon)): the analysis of context-specific models and visualisation of the results.
+* [Data preprocessing](#data-preprocessing-bash): downloading and preprocessing the transcriptomics data used as an input to model extraction methods in the next step.
+* [Model extraction](#model-extraction-matlab): the integration of the transcriptomics data with the reference model to obtain context-specific models.
+* [Analysis and visualisation](#analysis-and-visualisation-pyhon): the analysis of context-specific models and visualisation of the results.
 
 ## Data preprocessing (Bash)
 * [`make_index.sh`](/Code/Linux/make_index.sh): Downloads the Human transcriptome data and generate the kallisto transcriptome index. 
