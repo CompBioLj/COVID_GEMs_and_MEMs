@@ -1,5 +1,13 @@
 # Genome-scale metabolic modelling of COVID-19
 
+---
+
+[![](https://img.shields.io/badge/doi-10.1016%2Fj.compbiomed.2022.105428-brightgreen)](https://doi.org/10.1016/j.compbiomed.2022.105428)
+
+---
+
+
+
 This repository is supplementing the paper **Integration of omics data to generate and analyse COVID-19 specific genome-scale metabolic models**. The main parts of the code in the repository are
 * [Data preprocessing](#data-preprocessing-bash): downloading and preprocessing the transcriptomics data used as an input to model extraction methods in the next step.
 * [Model extraction](#model-extraction-matlab): the integration of the transcriptomics data with the reference model to obtain context-specific models.
