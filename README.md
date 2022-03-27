@@ -45,3 +45,8 @@ The analysis of extracted models and the visualisation of the obtained results w
 * [`results_PCA_sampling`](results_PCA_sampling): results of the PCA performed on the reactions with nonzero flux values after flux sampling on the extracted models.
 * [`results_enrichment`](results_enrichment): results of the enrichment analyses.
 * [`results_enrichment/reactions_subsystems.xlsx`](results_enrichment/reactions_subsystems.xlsx): full results of the enrichment analysis (for all metabolic reactions).
+
+## How to cite this repository
+If you are using this repository for your scientific work, please cite:
+
+Tadeja Režen, Alexandre Martins, Miha Mraz, Nikolaj Zimic, Damjana Rozman, Miha Moškon,Integration of omics data to generate and analyse COVID-19 specific genome-scale metabolic models, Computers in Biology and Medicine, Volume 145, 2022, https://doi.org/10.1016/j.compbiomed.2022.105428
