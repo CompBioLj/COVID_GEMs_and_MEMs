@@ -1,138 +1,138 @@
 subsystem,p_up,p_down,q_up,q_down,enrichment
-Glycolysis / Gluconeogenesis,0.5760139138853351,0.999776665340659,1.0,1.0,0
-Starch and sucrose metabolism,0.8709812528335996,0.16452763289862826,1.0,1.0,0
-Galactose metabolism,0.7913835672311353,0.8172589883700293,1.0,1.0,0
-Fructose and mannose metabolism,1.0,1.0,1.0,1.0,0
-Pentose and glucuronate interconversions,1.0,0.04130459930144226,1.0,0.3370191353028819,0
-Pyruvate metabolism,0.15215934355297556,0.9173208307900749,1.0,1.0,0
+Glycolysis / Gluconeogenesis,9.046745852447913e-08,0.999218637627009,1.2846379110476036e-05,1.0,1
+Starch and sucrose metabolism,0.2639585587178477,0.20370198851512256,1.0,1.0,0
+Galactose metabolism,0.7564852819026179,0.14446656591353335,1.0,0.8919240156400754,0
+Fructose and mannose metabolism,1.0,0.36833046471600417,1.0,1.0,0
+Pentose and glucuronate interconversions,1.0,0.04985976200762132,1.0,0.416475659122484,0
+Pyruvate metabolism,0.055843257542340874,0.7043332479494475,0.6608118809177004,1.0,0
 Propanoate metabolism,1.0,1.0,1.0,1.0,0
-Butanoate metabolism,1.0,0.11958763039312659,1.0,0.790388284523031,0
-Pentose phosphate pathway,0.9133952678923998,0.25885376154676965,1.0,1.0,0
-Purine metabolism,0.02887772902514163,0.9892238169134764,0.5125796901962639,1.0,0
-Pyrimidine metabolism,0.056755192790364895,0.9738891350911968,0.6716031146859845,1.0,0
-Nucleotide metabolism,0.28150562612064334,0.6314777009740177,1.0,1.0,0
-"Alanine, aspartate and glutamate metabolism",0.130152989601793,0.9103819378021575,1.0,1.0,0
-Arginine and proline metabolism,0.19650392905936076,1.0,1.0,1.0,0
-Histidine metabolism,0.3308662977347945,1.0,1.0,1.0,0
-"Glycine, serine and threonine metabolism",0.24042030015952587,0.7925759250672677,1.0,1.0,0
-Lysine metabolism,0.9995598722682253,0.0012535324712682483,1.0,0.025428801560013037,-1
-Tryptophan metabolism,0.19022674740637302,1.0,1.0,1.0,0
-Tyrosine metabolism,1.0,1.0,1.0,1.0,0
-"Valine, leucine, and isoleucine metabolism",0.19022674740637302,1.0,1.0,1.0,0
-"Phenylalanine, tyrosine and tryptophan biosynthesis",0.5753012048190962,1.0,1.0,1.0,0
-Cysteine and methionine metabolism,0.9941832690089363,0.11278578908029213,1.0,0.790388284523031,0
-Glutathione metabolism,0.42128422830723344,0.653634127696707,1.0,1.0,0
-Transport reactions,0.016182450549113714,0.9716811567643867,0.32827256828202106,1.0,0
+Butanoate metabolism,1.0,0.13556717491612025,1.0,0.8910615694661959,0
+Pentose phosphate pathway,0.8304105120259,0.32893845168191527,1.0,1.0,0
+Purine metabolism,0.00011389780501702695,0.8949519644323355,0.005391162770805942,1.0,1
+Pyrimidine metabolism,0.07154429099215198,0.987193882764151,0.7077361320027543,1.0,0
+Nucleotide metabolism,0.4084659331585405,0.9960950063629186,1.0,1.0,0
+"Alanine, aspartate and glutamate metabolism",0.3430987389600436,0.9313330829121087,1.0,1.0,0
+Arginine and proline metabolism,0.574269911015151,0.3901713072052486,1.0,1.0,0
+Histidine metabolism,0.5063478809145295,0.6010937545145464,1.0,1.0,0
+"Glycine, serine and threonine metabolism",0.07476085901437546,0.6245734710544536,0.7077361320027543,1.0,0
+Lysine metabolism,0.958514588183714,0.002014366217528374,1.0,0.04086285755557559,-1
+Tryptophan metabolism,1.0,0.7481496314038719,1.0,1.0,0
+Tyrosine metabolism,0.2973321858862715,1.0,1.0,1.0,0
+"Valine, leucine, and isoleucine metabolism",1.0,1.0,1.0,1.0,0
+"Phenylalanine, tyrosine and tryptophan biosynthesis",1.0,1.0,1.0,1.0,0
+Cysteine and methionine metabolism,0.8799638751527609,0.1380517924525092,1.0,0.8910615694661959,0
+Glutathione metabolism,0.02396346707791852,0.7044313639570609,0.340281232506443,1.0,0
+Transport reactions,0.9998011344391161,0.995770114233767,1.0,1.0,0
 Beta-alanine metabolism,1.0,1.0,1.0,1.0,0
 Metabolism of other amino acids,1.0,1.0,1.0,1.0,0
-Amino sugar and nucleotide sugar metabolism,0.9862637483010935,0.2287189488485346,1.0,1.0,0
-Aminoacyl-tRNA biosynthesis,0.08450026830415847,0.8753361388505978,0.8570741499421788,1.0,0
+Amino sugar and nucleotide sugar metabolism,0.4663668849976145,0.2641115498257365,1.0,1.0,0
+Aminoacyl-tRNA biosynthesis,3.527275659953588e-05,0.9126267805249273,0.0025043657185670476,1.0,1
 O-glycan metabolism,1.0,1.0,1.0,1.0,0
 N-glycan metabolism,1.0,1.0,1.0,1.0,0
 Protein assembly,1.0,1.0,1.0,1.0,0
-Protein modification,0.3308662977347945,1.0,1.0,1.0,0
-Protein degradation,0.8197361119031623,0.572322868745653,1.0,1.0,0
-Miscellaneous,0.7251887791403382,0.636251693821912,1.0,1.0,0
-Sulfur metabolism,0.8197361119031623,0.572322868745653,1.0,1.0,0
-C5-branched dibasic acid metabolism,0.7913835672311353,0.8172589883700293,1.0,1.0,0
-Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism,0.7083638032796187,0.17100823210536598,1.0,1.0,0
-Oxidative phosphorylation,0.03608260732147939,1.0,0.5693033599611192,1.0,0
-ROS detoxification,0.19022674740637302,1.0,1.0,1.0,0
-Fatty acid activation (cytosolic),0.34103040339378543,0.5946476069632392,1.0,1.0,0
+Protein modification,1.0,1.0,1.0,1.0,0
+Protein degradation,0.5063478809145295,0.6010937545145464,1.0,1.0,0
+Miscellaneous,0.2700354459272054,0.8628376654902604,1.0,1.0,0
+Sulfur metabolism,0.5063478809145295,0.6010937545145464,1.0,1.0,0
+C5-branched dibasic acid metabolism,0.08151938004342929,0.8410336966842438,0.7234844978854349,1.0,0
+Tricarboxylic acid cycle and glyoxylate/dicarboxylate metabolism,0.14469849020351389,0.06182858052516382,1.0,0.48775880192073684,0
+Oxidative phosphorylation,0.8799638751527609,1.0,1.0,1.0,0
+ROS detoxification,0.6532529688949402,0.7481496314038719,1.0,1.0,0
+Fatty acid activation (cytosolic),0.04553419102826761,0.8773018182075469,0.5878050114558183,1.0,0
 Fatty acid activation (endoplasmic reticular),1.0,1.0,1.0,1.0,0
-Fatty acid biosynthesis (even-chain),0.0036163112574922884,0.9999959067806878,0.11404967050437169,1.0,0
-Fatty acid biosynthesis (odd-chain),9.556911917396604e-08,1.0,1.3570814922703178e-05,1.0,1
-Fatty acid biosynthesis (unsaturated),0.004015833468463792,1.0,0.11404967050437169,1.0,0
-Fatty acid elongation (even-chain),1.484197833678813e-05,1.0,0.0010537804619119573,1.0,1
-Fatty acid elongation (odd-chain),0.3694230422152871,1.0,1.0,1.0,0
-Fatty acid desaturation (even-chain),0.7952190290096737,1.0,1.0,1.0,0
-Fatty acid desaturation (odd-chain),1.0,1.0,1.0,1.0,0
-Fatty acid biosynthesis,0.10076435113248816,0.9120651360277721,0.9539025240542213,1.0,0
+Fatty acid biosynthesis (even-chain),0.6685235890913009,0.999761493919965,1.0,1.0,0
+Fatty acid biosynthesis (odd-chain),0.9970441570846155,1.0,1.0,1.0,0
+Fatty acid biosynthesis (unsaturated),1.0,0.9999287704998551,1.0,1.0,0
+Fatty acid elongation (even-chain),0.9631497490996758,0.9999025135986364,1.0,1.0,0
+Fatty acid elongation (odd-chain),0.9856860064408627,0.968050947157387,1.0,1.0,0
+Fatty acid desaturation (even-chain),0.9125099061988573,0.8778059174308698,1.0,1.0,0
+Fatty acid desaturation (odd-chain),1.0,0.6010937545145464,1.0,1.0,0
+Fatty acid biosynthesis,0.3116883834637747,0.8719312704526465,1.0,1.0,0
 Linoleate metabolism,1.0,1.0,1.0,1.0,0
 Lipoic acid metabolism,1.0,1.0,1.0,1.0,0
-Omega-3 fatty acid metabolism,0.06830196878147954,1.0,0.7460676589976996,1.0,0
-Omega-6 fatty acid metabolism,0.010207718147886347,1.0,0.2415826628333102,1.0,0
-Arachidonic acid metabolism,1.0,0.3459552495697489,1.0,1.0,0
-Leukotriene metabolism,1.0,0.9219884107580185,1.0,1.0,0
-Eicosanoid metabolism,1.0,0.2761536925807011,1.0,1.0,0
-Acyl-CoA hydrolysis,0.9999997727403402,6.343293668109595e-10,1.0,3.0024923362385415e-08,-1
-Carnitine shuttle (cytosolic),0.975035535397823,0.007278220627733645,1.0,0.0861256107615148,0
-Carnitine shuttle (mitochondrial),0.9086857457225768,0.26742055981468127,1.0,1.0,0
+Omega-3 fatty acid metabolism,0.004478648694785425,0.9999287704998551,0.1271936229319061,1.0,0
+Omega-6 fatty acid metabolism,0.9836559673041011,1.0,1.0,1.0,0
+Arachidonic acid metabolism,1.0,0.36833046471600417,1.0,1.0,0
+Leukotriene metabolism,1.0,0.9367148601207873,1.0,1.0,0
+Eicosanoid metabolism,1.0,0.7481496314038719,1.0,1.0,0
+Acyl-CoA hydrolysis,0.744985145282327,2.9863691186626795e-08,1.0,1.413548049500335e-06,-1
+Carnitine shuttle (cytosolic),0.410400572884815,0.0786411757073826,1.0,0.5877393131814911,0
+Carnitine shuttle (mitochondrial),0.3494155143500173,0.18008901251889975,1.0,1.0,0
 Carnitine shuttle (peroxisomal),1.0,1.0,1.0,1.0,0
 Carnitine shuttle (endoplasmic reticular),1.0,1.0,1.0,1.0,0
-Acylglycerides metabolism,0.9989587989511814,0.0032604061680294727,1.0,0.04629776758601851,-1
-Beta oxidation of even-chain fatty acids (peroxisomal),0.5753012048190962,1.0,1.0,1.0,0
-Beta oxidation of odd-chain fatty acids (peroxisomal),0.5753012048190962,1.0,1.0,1.0,0
-Beta oxidation of unsaturated fatty acids (n-9) (peroxisomal),0.43290722955233196,0.8172589883700293,1.0,1.0,0
+Acylglycerides metabolism,0.9408737146050793,0.0049216777731490025,1.0,0.06353438579883258,0
+Beta oxidation of even-chain fatty acids (peroxisomal),1.0,1.0,1.0,1.0,0
+Beta oxidation of odd-chain fatty acids (peroxisomal),1.0,1.0,1.0,1.0,0
+Beta oxidation of unsaturated fatty acids (n-9) (peroxisomal),0.7564852819026179,0.8410336966842438,1.0,1.0,0
 Beta oxidation of phytanic acid (peroxisomal),1.0,1.0,1.0,1.0,0
 Beta oxidation of di-unsaturated fatty acids (n-6) (peroxisomal),1.0,1.0,1.0,1.0,0
-Beta oxidation of even-chain fatty acids (mitochondrial),0.4906074096677858,0.8315952936155033,1.0,1.0,0
-Beta oxidation of odd-chain fatty acids (mitochondrial),0.05503093969249795,1.0,0.6716031146859845,1.0,0
-Beta oxidation of unsaturated fatty acids (n-7) (mitochondrial),0.0007376072133492562,1.0,0.03491340809853146,1.0,1
+Beta oxidation of even-chain fatty acids (mitochondrial),0.9802825711203139,0.5357122859266574,1.0,1.0,0
+Beta oxidation of odd-chain fatty acids (mitochondrial),0.8344301463083694,0.9999990736554036,1.0,1.0,0
+Beta oxidation of unsaturated fatty acids (n-7) (mitochondrial),1.0,1.0,1.0,1.0,0
 Beta oxidation of unsaturated fatty acids (n-7) (peroxisomal),1.0,1.0,1.0,1.0,0
-Beta oxidation of unsaturated fatty acids (n-9) (mitochondrial),0.04316859524553229,0.9522953657679978,0.6129940524865586,1.0,0
-Beta oxidation of di-unsaturated fatty acids (n-6) (mitochondrial),1.0,0.3459552495697489,1.0,1.0,0
+Beta oxidation of unsaturated fatty acids (n-9) (mitochondrial),0.74769087800819,0.9675909594517842,1.0,1.0,0
+Beta oxidation of di-unsaturated fatty acids (n-6) (mitochondrial),1.0,0.36833046471600417,1.0,1.0,0
 Beta oxidation of poly-unsaturated fatty acids (mitochondrial),1.0,1.0,1.0,1.0,0
 Beta oxidation of branched-chain fatty acids (mitochondrial),1.0,1.0,1.0,1.0,0
-Terpenoid backbone biosynthesis,1.0,0.01425462474318362,1.0,0.13494378090213827,0
+Terpenoid backbone biosynthesis,1.0,0.018324160698801717,1.0,0.18585934423070313,0
 Steroid metabolism,1.0,1.0,1.0,1.0,0
 Androgen metabolism,1.0,1.0,1.0,1.0,0
-Cholesterol biosynthesis 1 (Bloch pathway),1.0,8.260059303211165e-14,1.0,5.864642105279927e-12,-1
-Cholesterol biosynthesis 2,1.0,0.01425462474318362,1.0,0.13494378090213827,0
-Cholesterol biosynthesis 3 (Kandustch-Russell pathway),1.0,0.3459552495697489,1.0,1.0,0
-Cholesterol metabolism,0.9997369960892126,0.042720735460928694,1.0,0.3370191353028819,0
+Cholesterol biosynthesis 1 (Bloch pathway),1.0,1.4944712134479232e-12,1.0,1.0610745615480255e-10,-1
+Cholesterol biosynthesis 2,1.0,0.018324160698801717,1.0,0.18585934423070313,0
+Cholesterol biosynthesis 3 (Kandustch-Russell pathway),1.0,0.36833046471600417,1.0,1.0,0
+Cholesterol metabolism,0.9343487942470787,0.3337885747076208,1.0,1.0,0
 Estrogen metabolism,1.0,1.0,1.0,1.0,0
 Formation and hydrolysis of cholesterol esters,1.0,1.0,1.0,1.0,0
-Sphingolipid metabolism,0.9987397402324147,0.001813150283319187,1.0,0.02860748224792495,-1
-Glycerolipid metabolism,1.0,0.04130459930144226,1.0,0.3370191353028819,0
-Glycerophospholipid metabolism,0.9999152396502283,0.0008836341960967165,1.0,0.020912675974288957,-1
+Sphingolipid metabolism,0.8839924179652674,0.0030127412661030695,1.0,0.0475343621985151,-1
+Glycerolipid metabolism,1.0,0.04985976200762132,1.0,0.416475659122484,0
+Glycerophospholipid metabolism,0.6038114445621239,6.731898525780267e-05,1.0,0.0019118591813215957,-1
 Glycosphingolipid biosynthesis-ganglio series,1.0,1.0,1.0,1.0,0
 Glycosphingolipid biosynthesis-globo series,1.0,1.0,1.0,1.0,0
 Glycosphingolipid biosynthesis-lacto and neolacto series,1.0,1.0,1.0,1.0,0
 Glycosphingolipid metabolism,1.0,1.0,1.0,1.0,0
 Glycosylphosphatidylinositol (GPI)-anchor biosynthesis,1.0,1.0,1.0,1.0,0
 Glucocorticoid biosynthesis,1.0,1.0,1.0,1.0,0
-Prostaglandin biosynthesis,1.0,0.3459552495697489,1.0,1.0,0
-Ether lipid metabolism,0.10933325335193267,1.0,0.9703326234984024,1.0,0
-Isolated,0.7913835672311353,0.8172589883700293,1.0,1.0,0
+Prostaglandin biosynthesis,1.0,0.36833046471600417,1.0,1.0,0
+Ether lipid metabolism,0.0077680517235436675,1.0,0.14910794900580568,1.0,0
+Isolated,0.34355602986528,0.8410336966842438,1.0,1.0,0
 Chondroitin / heparan sulfate biosynthesis,1.0,1.0,1.0,1.0,0
 Chondroitin sulfate degradation,1.0,1.0,1.0,1.0,0
 Heparan sulfate degradation,1.0,1.0,1.0,1.0,0
 Keratan sulfate biosynthesis,1.0,1.0,1.0,1.0,0
 Keratan sulfate degradation,1.0,1.0,1.0,1.0,0
-Bile acid biosynthesis,1.0,0.3459552495697489,1.0,1.0,0
+Bile acid biosynthesis,1.0,0.36833046471600417,1.0,1.0,0
 Bile acid recycling,1.0,1.0,1.0,1.0,0
 Blood group biosynthesis,1.0,1.0,1.0,1.0,0
-Nicotinate and nicotinamide metabolism,0.6612348283253621,1.0,1.0,1.0,0
-Pantothenate and CoA biosynthesis,1.0,0.0016935726122423445,1.0,0.02860748224792495,-1
-Inositol phosphate metabolism,0.9821680141187088,0.09236450745248481,1.0,0.690303160960676,0
-Folate metabolism,0.15515304976427835,0.9983782027341844,1.0,1.0,0
+Nicotinate and nicotinamide metabolism,0.003556723145611951,1.0,0.12626367166922425,1.0,0
+Pantothenate and CoA biosynthesis,1.0,0.0024694743146161935,1.0,0.043833169084437434,-1
+Inositol phosphate metabolism,0.7923394080307341,0.00477555406516883,1.0,0.06353438579883258,0
+Folate metabolism,0.02305350854615129,0.8982741907949365,0.340281232506443,1.0,0
 Biotin metabolism,1.0,1.0,1.0,1.0,0
-Biopterin metabolism,0.1877075512497235,0.8743233249098923,1.0,1.0,0
+Biopterin metabolism,0.958514588183714,0.9004121416387109,1.0,1.0,0
 Ascorbate and aldarate metabolism,1.0,1.0,1.0,1.0,0
-Porphyrin metabolism,0.7861506684711799,0.28471117247982325,1.0,1.0,0
-Retinol metabolism,0.9301008024793574,0.011278192588585312,1.0,0.1231925651983934,0
-Riboflavin metabolism,0.9235314686584486,0.2761536925807011,1.0,1.0,0
+Porphyrin metabolism,0.44148716071507255,0.12817142287435568,1.0,0.8910615694661959,0
+Retinol metabolism,0.008400447831312996,0.02507245465460639,0.14910794900580568,0.23735257073027383,0
+Riboflavin metabolism,0.6532529688949402,0.30698200073882076,1.0,1.0,0
 Serotonin and melatonin biosynthesis,1.0,1.0,1.0,1.0,0
-Thiamine metabolism,0.5753012048190962,1.0,1.0,1.0,0
-Vitamin B12 metabolism,0.6121453983941504,0.7204074568284304,1.0,1.0,0
-Vitamin B6 metabolism,0.36709864781784796,0.7596381491083615,1.0,1.0,0
-Vitamin D metabolism,1.0,3.81514615455103e-08,1.0,1.3543768848656157e-06,-1
-Vitamin E metabolism,1.0,8.260059303211165e-14,1.0,5.864642105279927e-12,-1
+Thiamine metabolism,0.2973321858862715,1.0,1.0,1.0,0
+Vitamin B12 metabolism,0.21253770495815338,0.7481496314038719,1.0,1.0,0
+Vitamin B6 metabolism,0.6652659572851632,0.7964937736582113,1.0,1.0,0
+Vitamin D metabolism,1.0,1.049573019606953e-07,1.0,3.7259842196046833e-06,-1
+Vitamin E metabolism,1.0,1.4944712134479232e-12,1.0,1.0610745615480255e-10,-1
 Xenobiotics metabolism,1.0,1.0,1.0,1.0,0
-Pool reactions,0.967580769133802,0.1224545229542724,1.0,0.790388284523031,0
-Exchange/demand reactions,0.24229810411497632,0.20717574072361034,1.0,1.0,0
-Artificial reactions,1.0,0.00491538784004053,1.0,0.06345318848052321,0
-Ubiquinone synthesis,0.9998140626688224,0.0004762481802781382,1.0,0.013525448319899123,-1
-Fatty acid oxidation,0.18676726157167733,0.8233608172798381,1.0,1.0,0
+Pool reactions,0.7564852819026179,0.4694974355565108,1.0,1.0,0
+Exchange/demand reactions,0.008287862541987434,0.28380588831403175,0.14910794900580568,1.0,0
+Artificial reactions,1.0,0.006729390047827355,1.0,0.07963111556595703,0
+Ubiquinone synthesis,0.9708974908035777,0.0008148647250999508,1.0,0.019285131827365503,-1
+Fatty acid oxidation,0.06822537118427374,0.7999703932112906,0.7077361320027543,1.0,0
 Alkaloids biosynthesis,1.0,1.0,1.0,1.0,0
-Heme synthesis,0.5753012048190962,1.0,1.0,1.0,0
+Heme synthesis,0.2973321858862715,1.0,1.0,1.0,0
 Vitamin C metabolism,1.0,1.0,1.0,1.0,0
 Phosphatidylinositol phosphate metabolism,1.0,1.0,1.0,1.0,0
 Heme degradation,1.0,1.0,1.0,1.0,0
-Vitamin A metabolism,0.6121453983941504,0.7204074568284304,1.0,1.0,0
+Vitamin A metabolism,0.21253770495815338,0.7481496314038719,1.0,1.0,0
 Phenylalanine metabolism,1.0,1.0,1.0,1.0,0
-CoA synthesis,1.0,0.3459552495697489,1.0,1.0,0
+CoA synthesis,1.0,0.36833046471600417,1.0,1.0,0
 Urea cycle,1.0,1.0,1.0,1.0,0
 Dietary fiber binding,1.0,1.0,1.0,1.0,0
 Vitamin B2 metabolism,1.0,1.0,1.0,1.0,0
